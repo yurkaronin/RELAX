@@ -2,7 +2,6 @@
   text-decoration: none;
   cursor: pointer;
   max-width: max-content;
-  font-family: var(--font-family);
   text-align: center;
   transition: all 0.3s;
   box-shadow: none;
@@ -11,138 +10,46 @@
   align-items: center;
   justify-content: center;
   border: none;
-
-  background-color: transparent;
-  height: 56px;
-  padding: 10px 16px;
+  outline: none;
 
   line-height: 1;
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--white);
-  border-radius: 20px;
 
-  span {
-    position: relative;
-    z-index: 2;
-    pointer-events: none;
-  }
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 17px;
+  color: #80541d;
 
-  svg {
-    position: relative;
-    z-index: 2;
-    pointer-events: none;
-  }
+  border-radius: 15px;
+  padding: 25px 45px;
+  height: 65px;
+  box-shadow: 0 6px 12px 0 rgba(27, 8, 8, 0.54), 0 22px 22px 0 rgba(27, 8, 8, 0.47), 0 50px 30px 0 rgba(27, 8, 8, 0.28), 0 89px 36px 0 rgba(27, 8, 8, 0.08), 0 140px 39px 0 rgba(27, 8, 8, 0.01), 0 3px 0 0 #90774e;
+  background: linear-gradient(90deg, #ebb877 0%, #fee5bc 50%, #facd96 100%);
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transition:
-      transform 0.3s ease-in-out,
-      border-color 0.3s ease-in-out,
-      background-color 0.3s ease-in-out;
-    pointer-events: none;
-    z-index: 0;
-    background-color: var(--violet);
-    transform: scale(1);
-    border-radius: 20px;
-  }
+  // span {
+  //   position: relative;
+  //   z-index: 2;
+  //   pointer-events: none;
+  // }
 
-  &--small {
-    height: 48px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-
-  &--white {
-    color: var(--balck);
-    &::before {
-      background-color: var(--white);
-    }
-  }
-
-  &--green {
-    &::before {
-      background-color: var(--green);
-    }
-  }
-
-  &--transparent {
-    border-radius: 32px;
-    &::before {
-      background-color: transparent;
-      border: 2px solid var(--white);
-      border-radius: 32px;
-    }
-    &:hover,
-    &:active,
-    &:focus {
-      &::before {
-        background-color: var(--green);
-        border-color: transparent;
-      }
-    }
-  }
-
-  &--icon {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 8px;
-    align-items: center;
-  }
-  &--icon-solo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    padding: 0;
-    width: 48px;
-    height: 48px;
-    max-width: initial;
-    &::before {
-      border-radius: 50%;
-    }
-
-    svg {
-      display: block;
-    }
-  }
-  &--counter {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 8px;
-    align-items: center;
-    padding-inline: 24px;
-  }
-
-  .counter {
-    border-radius: 50%;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    color: var(--white);
-    display: flex;
-    width: 32px;
-    height: 32px;
-    background-color: var(--violet);
-    align-items: center;
-    justify-content: center;
-  }
 
   &:hover,
   &:active,
-  &:focus {
-    &::before {
-      transform: scale(1.07);
-    }
+  &:focus {}
+
+  &--mod {
+    border: 1px solid var(--white-005);
+    border-radius: 15px;
+    padding: 20px 30px;
+    backdrop-filter: blur(45px);
+    background: rgba(0, 0, 0, 0.05);
+    font-family: var(--second-family);
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: none;
   }
 
   &.isActive {
     color: var(--white);
+
     &::before {
       background-color: var(--green);
     }
@@ -161,9 +68,11 @@
     &--large {
       height: 50px;
     }
+
     &--read-more {
       height: 50px;
     }
+
     &--small {
       height: 45px;
     }

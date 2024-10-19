@@ -11,6 +11,13 @@
   --lightestGray-05: rgba(245, 245, 245, 0.55);
   --softPeach: #fee5bc;
   --white: #fff;
+  --white-08: rgba(255, 255, 255, 0.8);
+  --white-07: rgba(255, 255, 255, 0.7);
+  --white-06: rgba(255, 255, 255, 0.6);
+  --white-03: rgba(255, 255, 255, 0.3);
+  --white-02: rgba(255, 255, 255, 0.2);
+  --white-01: rgba(255, 255, 255, 0.1);
+  --white-005: rgba(255, 255, 255, 0.05);
   --black: #000;
 }
 
@@ -584,7 +591,6 @@ textarea {
   cursor: pointer;
   max-width: -moz-max-content;
   max-width: max-content;
-  font-family: var(--font-family);
   text-align: center;
   transition: all 0.3s;
   box-shadow: none;
@@ -593,109 +599,28 @@ textarea {
   align-items: center;
   justify-content: center;
   border: none;
-  background-color: transparent;
-  height: 56px;
-  padding: 10px 16px;
+  outline: none;
   line-height: 1;
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--white);
-  border-radius: 20px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 17px;
+  color: #80541d;
+  border-radius: 15px;
+  padding: 25px 45px;
+  height: 65px;
+  box-shadow: 0 6px 12px 0 rgba(27, 8, 8, 0.54), 0 22px 22px 0 rgba(27, 8, 8, 0.47), 0 50px 30px 0 rgba(27, 8, 8, 0.28), 0 89px 36px 0 rgba(27, 8, 8, 0.08), 0 140px 39px 0 rgba(27, 8, 8, 0.01), 0 3px 0 0 #90774e;
+  background: linear-gradient(90deg, #ebb877 0%, #fee5bc 50%, #facd96 100%);
 }
-.button span {
-  position: relative;
-  z-index: 2;
-  pointer-events: none;
-}
-.button svg {
-  position: relative;
-  z-index: 2;
-  pointer-events: none;
-}
-.button::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  pointer-events: none;
-  z-index: 0;
-  background-color: var(--violet);
-  transform: scale(1);
-  border-radius: 20px;
-}
-.button--small {
-  height: 48px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-.button--white {
-  color: var(--balck);
-}
-.button--white::before {
-  background-color: var(--white);
-}
-.button--green::before {
-  background-color: var(--green);
-}
-.button--transparent {
-  border-radius: 32px;
-}
-.button--transparent::before {
-  background-color: transparent;
-  border: 2px solid var(--white);
-  border-radius: 32px;
-}
-.button--transparent:hover::before, .button--transparent:active::before, .button--transparent:focus::before {
-  background-color: var(--green);
-  border-color: transparent;
-}
-.button--icon {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 8px;
-  align-items: center;
-}
-.button--icon-solo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 0;
-  width: 48px;
-  height: 48px;
-  max-width: initial;
-}
-.button--icon-solo::before {
-  border-radius: 50%;
-}
-.button--icon-solo svg {
-  display: block;
-}
-.button--counter {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 8px;
-  align-items: center;
-  padding-inline: 24px;
-}
-.button .counter {
-  border-radius: 50%;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  color: var(--white);
-  display: flex;
-  width: 32px;
-  height: 32px;
-  background-color: var(--violet);
-  align-items: center;
-  justify-content: center;
-}
-.button:hover::before, .button:active::before, .button:focus::before {
-  transform: scale(1.07);
+.button--mod {
+  border: 1px solid var(--white-005);
+  border-radius: 15px;
+  padding: 20px 30px;
+  -webkit-backdrop-filter: blur(45px);
+          backdrop-filter: blur(45px);
+  background: rgba(0, 0, 0, 0.05);
+  font-family: var(--second-family);
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: none;
 }
 .button.isActive {
   color: var(--white);
@@ -1197,6 +1122,12 @@ textarea {
     width: 100%;
     max-width: 100%;
   }
+}
+
+.hero {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .steps {
