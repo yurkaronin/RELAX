@@ -1,0 +1,109 @@
+// Служебные стили
+.modal {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--modal-bg);
+  color: var(--balck);
+
+  &__body {
+    position: relative;
+    width: 835px !important;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 32px 48px 48px;
+    background: var(--white);
+    border-radius: 20px;
+  }
+  &__title {
+    font-size: 32px;
+    margin-bottom: 8px;
+    &::before {
+      top: 19px;
+      height: 4px;
+    }
+  }
+  &__text {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 156%;
+  }
+  &__input {
+  }
+
+  &__close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    display: block;
+    width: max-content;
+    padding: 10px;
+    color: var(--modal-icon);
+    border: none;
+    transition: color 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+
+    svg {
+      display: block;
+
+      path {
+        stroke: currentColor;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--green);
+    }
+  }
+
+  &.active {
+    pointer-events: initial;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media (max-width: 950px) {
+    &__body {
+      position: relative;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__body {
+      padding: 17px 20px 30px;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 125%;
+      &::before {
+        width: 270px;
+      }
+    }
+    &__close {
+      top: 0;
+      right: 0;
+
+      svg {
+        scale: 0.8;
+      }
+    }
+  }
+}

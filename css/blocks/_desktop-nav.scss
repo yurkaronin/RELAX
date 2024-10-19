@@ -1,0 +1,56 @@
+.desktop-nav {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: var(--white);
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100% + 32px);
+    margin-right: -32px;
+    margin-bottom: -12px;
+  }
+  &__item {
+    max-width: max-content;
+    margin-right: 32px;
+    margin-bottom: 12px;
+  }
+  &__link {
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 2px;
+      -webkit-transition:
+        opacity 0.3s,
+        color 0.3s,
+        width 0.3s;
+      transition:
+        opacity 0.3s,
+        color 0.3s,
+        width 0.3s;
+      opacity: 0;
+      background-color: var(--violet);
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      &::after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+    &.current-page::after,
+    &:not([href])::after {
+      width: 100%;
+      opacity: 1;
+      background-color: var(--green);
+    }
+  }
+}

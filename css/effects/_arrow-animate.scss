@@ -1,0 +1,36 @@
+.arrow-animate {
+  svg {
+    overflow: visible;
+    margin-right: 6px;
+  }
+  path:first-of-type {
+    transition: transform 0.3s;
+  }
+
+}
+
+
+a {
+  &:hover,
+  &:active,
+  &:focus {
+
+    .arrow-animate {
+      path:first-of-type {
+        transform: translateX(6px);
+      }
+    }
+  }
+}
+button {
+  &:hover,
+  &:active,
+  &:focus {
+
+    .arrow-animate {
+      path:first-of-type {
+        transform: translateX(6px);
+      }
+    }
+  }
+}

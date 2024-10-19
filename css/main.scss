@@ -1,0 +1,55 @@
+// base
+@import "./base/root";
+@import "./base/fonts";
+@import "./base/normalize";
+@import "./base/global";
+@import "./base/support";
+
+// Эффекты
+@import "./effects/click";
+
+// blocks
+@import "./blocks/wrapper";
+@import "./blocks/title";
+@import "./blocks/button";
+
+@import "./blocks/menu-button";
+@import "./blocks/navigation.scss";
+
+
+@import "./blocks/form";
+
+
+// sections
+@import "./sections/header";
+@import "./sections/sections-group";
+@import "./sections/mobile-nav";
+
+@import "./sections/steps";
+
+@import "./sections/footer";
+
+@import "./sections/modal";
+
+// Активные состояния элементов
+@import "./activity/header-sticky";
+@import "./activity/mobile-nav-open";
+
+
+@media (max-width: 1504px) {}
+
+@media (max-width: 1379px) {}
+
+@media (max-width: 1279px) {}
+
+@media (max-width: 1023px) {}
+
+@media (max-width: 950px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 550px) {}
+
+@media (max-width: 450px) {}
+
+@media (max-width: 374px) {}

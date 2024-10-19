@@ -1,0 +1,25 @@
+.header-sticky {
+  .header {
+    background-color: var(--balck);
+  }
+  .header__top {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    .header__contacts {
+      margin-top: -5px;
+      margin-bottom: -5px;
+    }
+  }
+
+  // .main {
+  //   margin-top: 70px;
+  // }
+
+  @media (max-width: 767px) {
+    .header__top {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

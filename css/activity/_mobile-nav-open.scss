@@ -1,0 +1,31 @@
+.mobile-nav-open {
+  overflow: hidden;
+  .mobile-nav {
+    top: 0;
+    visibility: initial;
+    opacity: initial;
+    pointer-events: initial;
+  }
+  .header__top {
+    border-bottom: 1px solid var(--white-02);
+    background-color: var(--balck);
+  }
+
+  .menu-button span {
+    background-color: transparent;
+  }
+
+  .menu-button span:after {
+    transform: rotate(45deg);
+    width: 24px;
+  }
+
+  .menu-button span:before {
+    transform: rotate(-45deg);
+    width: 24px;
+  }
+
+  .mobile-nav {
+    right: 0;
+  }
+}

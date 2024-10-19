@@ -1,0 +1,24 @@
+.drop-down-menu-open {
+  // overflow: hidden;
+  .header {
+    background-color: var(--balck);
+  }
+  .header__bottom {
+    display: block;
+  }
+
+  .menu-button span {
+    background-color: transparent;
+  }
+
+  .menu-button span:after {
+    transform: rotate(45deg);
+    width: 24px;
+  }
+
+  .menu-button span:before {
+    transform: rotate(-45deg);
+    width: 24px;
+  }
+
+}

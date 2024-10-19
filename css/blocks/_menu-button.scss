@@ -1,0 +1,38 @@
+.menu-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span,
+  span::after,
+  span::before {
+    flex-shrink: 0;
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    // border-radius: 4px;
+    background-color: var(--white);
+    z-index: 2;
+  }
+
+  span::after,
+  span::before {
+    content: "";
+    display: block;
+    transition: 0.3s;
+  }
+
+  span::before {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    width: 18px;
+  }
+
+  span::after {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    width: 12px;
+  }
+
+
+}
