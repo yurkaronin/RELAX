@@ -1,0 +1,12 @@
+.best-masters {
+  display: flex;
+  align-items: flex-end;
+  &__photo {
+    width: 120px;
+    display: block;
+  }
+  &__icon {
+    position: relative;
+    margin-left: -25px;
+  }
+}

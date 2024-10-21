@@ -5,4 +5,33 @@
   background-image: url(../img/hero/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 180px;
+  padding-bottom: 135px;
+  &__content {
+    max-width: 560px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 129%;
+    color: rgba(245, 245, 245, 0.55);
+    max-width: 280px;
+
+    b {
+      font-weight: 600;
+      color: rgba(245, 245, 245, 0.9);
+    }
+  }
+
+  .title {
+    text-wrap: balance;
+  }
+
+  .best-masters {
+    margin-bottom: 15px;
+  }
 }

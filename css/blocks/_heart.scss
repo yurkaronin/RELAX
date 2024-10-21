@@ -1,0 +1,22 @@
+.heart {
+  display: inline-block;
+  overflow: visible;
+  width: 11px;
+  height: 11px;
+  position: relative;
+  // background-color: red;
+  margin-inline: 10px;
+
+  &::before {
+    content: '';
+    width: 39px;
+    height: 37px;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -13px;
+    left: -15px;
+
+  }
+}
