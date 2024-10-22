@@ -1436,11 +1436,12 @@ textarea {
   gap: 32px;
   grid-template-columns: 460px 1fr;
   position: relative;
+  align-items: flex-end;
 }
 .reviews__grid::before {
   content: "";
   position: absolute;
-  bottom: -88px;
+  bottom: -116px;
   left: -80px;
   right: -80px;
   height: 315px;
