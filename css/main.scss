@@ -18,6 +18,8 @@
 
 @import "./blocks/menu-button";
 @import "./blocks/navigation.scss";
+@import "./blocks/section-label";
+@import "./blocks/card-item";
 
 
 @import "./blocks/form";
@@ -25,11 +27,14 @@
 
 // sections
 @import "./sections/header";
+@import "./sections/section";
 @import "./sections/sections-group";
 @import "./sections/mobile-nav";
 
 @import "./sections/hero";
+@import "./sections/advantages";
 @import "./sections/steps";
+@import "./sections/reviews";
 
 @import "./sections/footer";
 

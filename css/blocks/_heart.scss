@@ -5,7 +5,7 @@
   height: 11px;
   position: relative;
   // background-color: red;
-  margin-inline: 10px;
+  margin-inline: 6px;
 
   &::before {
     content: '';
@@ -17,6 +17,11 @@
     position: absolute;
     top: -13px;
     left: -15px;
+  }
 
+  &--red {
+    &::before {
+      background-image: url(../img/icon-heart-red.svg);
+    }
   }
 }

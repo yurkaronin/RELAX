@@ -1,0 +1,15 @@
+.section-label {
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  border: 1px solid rgba(69, 71, 71, 0.15);
+  border-radius: 100px;
+  padding: 10px 20px;
+  height: 42px;
+  padding: 6px 20px;
+  color: rgba(69, 71, 71, 0.15);
+}

@@ -1,0 +1,88 @@
+.card-item {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: rgba(255, 242, 244, 0.55);
+  height: auto;
+  width: 100%;
+
+
+  &__image {
+    // position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    img {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 50px 45px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__name {
+    display: block;
+    margin: 0;
+    margin-bottom: auto;
+    flex-grow: 2;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 110%;
+    color: #ebf3ff;
+
+  }
+
+  &__text {
+    margin-top: 25px;
+    margin-bottom: 0;
+
+  }
+
+  .best-masters {
+    max-width: max-content;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+
+  &__number {
+    display: block;
+    max-width: max-content;
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: rgba(255, 242, 244, 0.25);
+  }
+
+  &--mini {
+    // height: 320px;
+    // width: 320px;
+    color: rgba(255, 242, 244, 0.55);
+
+    &__wrapper {
+      padding: 40px 35px;
+    }
+
+    &__name {
+      font-size: 27px;
+    }
+  }
+
+}

@@ -1,0 +1,44 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__header {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 60px;
+  }
+  &__header-col {
+    grid-column: 6/12;
+  }
+  &__card-group {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: max-content;
+    &--right {
+      max-width: max-content;
+      margin-left: auto;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 20px;
+    }
+    &--left {
+      max-width: max-content;
+      margin-right: auto;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &__subtitle {
+    margin: 0;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+  .section-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
