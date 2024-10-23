@@ -1,0 +1,15 @@
+.services {
+  background-image: url(../img/services/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .section-label {
+    border: 1px solid rgba(245, 245, 245, 0.15);
+    color: rgba(245, 245, 245, 0.15);
+  }
+  &__list {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 5fr 7fr;
+    align-items: flex-start;
+  }
+}
