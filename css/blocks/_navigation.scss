@@ -24,6 +24,36 @@
     color: #fff2f4;
     padding: 16px 0;
     opacity: 0.55;
+    transition: all 0.3s;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 2px;
+      -webkit-transition:
+        opacity 0.3s,
+        color 0.3s,
+        width 0.3s;
+      transition:
+        opacity 0.3s,
+        color 0.3s,
+        width 0.3s;
+      opacity: 0;
+      background-color: #ffffff;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #ffffff;
+      opacity: 1;
+      &::after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
   }
 
   &__item:has(ul) {

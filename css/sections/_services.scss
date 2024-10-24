@@ -12,4 +12,16 @@
     grid-template-columns: 5fr 7fr;
     align-items: flex-start;
   }
+
+  @media (max-width: 767px) {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+    .service-card__wrapper {
+      padding: 0px 20px;
+    }
+    .service-card__subtitle {
+      padding-inline: 20px;
+    }
+  }
 }

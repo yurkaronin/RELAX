@@ -11,8 +11,9 @@
   background-size: cover;
 
   @media (max-width: 767px) {
-    padding-top: 65px;
-    padding-bottom: 55px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-inline: 0;
   }
 
   // &--mod {

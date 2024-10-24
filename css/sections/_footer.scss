@@ -1,132 +1,102 @@
 .footer {
-  background-color: var(--balck);
-  color: var(--white);
-  font-size: 14px;
   padding-top: 50px;
   padding-bottom: 40px;
+  background-image: url(../img/footer/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  overflow: hidden;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  color: rgba(245, 245, 245, 0.25);
+
   &__grid {
     display: grid;
     gap: 14px 32px;
     grid-template-columns: 3fr 6fr 3fr;
   }
-  &__contacts {
-    max-width: max-content;
-    margin-left: auto;
-    display: grid;
-    gap: 6px;
-    justify-items: end;
-    margin-bottom: 12px;
+
+  .section-label {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(245, 245, 245, 0.45);
+    color: rgba(245, 245, 245, 0.45);
+    backdrop-filter: blur(35px);
   }
-  &__bottom {
-    grid-column: span 3;
+
+  &__contacts {
     display: grid;
     gap: 32px;
-    grid-template-columns: 1fr auto;
     width: 100%;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    margin-bottom: 25px;
   }
-  .copyright {
+  &__contacts-link {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 116%;
+    color: rgba(245, 245, 245, 0.65);
+    text-decoration: none;
+    position: relative;
     max-width: max-content;
-    margin-left: auto;
+    transition: all 0.3s;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      transition: all 0.3s;
+      border-bottom: 1px dashed rgba(245, 245, 245, 0.25);
+    }
+    &:hover {
+      color: #fff;
+      &:after {
+        border-bottom: 1px dashed #fff;
+      }
+    }
   }
-  .navigation__list {
-    grid-template-columns: repeat(3, 1fr);
+  .section__footer {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, auto);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 129%;
+    color: rgba(245, 245, 245, 0.25);
+    width: 100%;
   }
-  .navigation__item:has(ul) {
-    grid-row: span 3;
+  &__copy {
+    margin: 0;
+  }
+  .section__header-col {
+    grid-column: 7/13;
   }
 
   @media (max-width: 1279px) {
-    padding-top: 40px;
-    &__grid {
-      grid-template-columns: repeat(12, 1fr);
-      gap: 32px;
-      align-items: flex-start;
-    }
-    &__logo {
-      grid-column: span 3;
-    }
-    &__navigation {
-      grid-column: span 9;
-    }
-    .mini-nav__list {
-      justify-content: flex-end;
-    }
-
-    &__contacts {
-      grid-column: span 8;
-      max-width: 100%;
-      margin-left: initial;
-      display: grid;
-      gap: 5px 32px;
-      justify-items: initial;
-      margin-bottom: 0;
-      width: 100%;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-    }
-    &__bottom {
-      grid-column: span 4;
-      gap: 5px;
-      grid-template-columns: 1fr;
-      justify-items: end;
-      text-align: right;
-      margin-left: auto;
-    }
-  }
-
-  @media (max-width: 1023px) {
-    &__grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px 32px;
-    }
-    &__logo {
-      display: none;
-    }
-    &__navigation {
-      grid-column: span 2;
-    }
-    &__contacts {
-      grid-column: span 2;
-    }
-    &__bottom {
-      grid-column: span 2;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: initial;
-      text-align: initial;
-      margin-left: initial;
-      margin-top: calc(35px - 24px);
-    }
-    .mini-nav__list {
-      justify-content: initial;
+    .footer__contacts-link {
+      font-size: 32px;
     }
   }
 
   @media (max-width: 767px) {
-    padding-top: 25px;
-    padding-bottom: 35px;
-    &__grid {
-      display: block;
+    .footer__contacts {
+      gap: 12px;
+      grid-template-columns: 1fr;
+      margin-bottom: 16px;
     }
-    &__navigation {
-      margin-bottom: 24px;
+    .section__footer {
+      grid-template-columns: 1fr;
+      gap: 6px;
+      margin-top: 16px;
     }
-    .navigation__list {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    &__contacts {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-    &__bottom {
-      grid-template-columns: repeat(1, 1fr);
-      margin-top: 0;
-    }
-    .navigation__item:has(ul) {
-      grid-row: 3/6;
-      grid-column: 1;
-  }
-
   }
 }

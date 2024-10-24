@@ -1,0 +1,29 @@
+.social-list {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  text-decoration-skip-ink: none;
+  color: #fee5bc;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, auto);
+  max-width: max-content;
+  a {
+    text-decoration: underline;
+  }
+  &__item {
+    position: relative;
+  }
+  &__item:first-of-type::before {
+    content: "";
+    width: 39px;
+    height: 37px;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -8px;
+    right: -35px;
+  }
+}

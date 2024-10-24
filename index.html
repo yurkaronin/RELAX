@@ -38,33 +38,34 @@
           <nav class="navigation">
             <ul class="navigation__list list-reset">
               <li class="navigation__item">
-                <a href="#" class="navigation__link">
+                <a href="#advantages-section" class="navigation__link">
                   <span>Преимущества</span>
                 </a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">
+                <a href="#steps-section" class="navigation__link">
                   <span>Как это работает?</span>
                 </a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">
+                <a href="#reviews-section" class="navigation__link">
                   <span>Отзывы</span>
                 </a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">
+                <a href="#services-section" class="navigation__link">
                   <span>Цены</span>
                 </a>
               </li>
             </ul>
           </nav>
+
         </div>
 
         <div class="header__right">
-          <a href="#" class="button button--mod"><span>Заказать консультацию</span></a>
+          <a href="#" class="button button--mod click" data-target="modal-call-back"><span>Заказать консультацию</span></a>
           <!-- Кнопка меню  -->
-          <button class="menu-button" title="Открыть выпадающее меню" type="button">
+          <button class="menu-button click js-menu-show-btn" title="Открыть выпадающее меню" type="button">
             <span class="menu-button__border"></span>
           </button>
         </div>
@@ -111,9 +112,9 @@
           </li>
         </ul>
 
-        <a href="#" class="button button--mod"><span>Заказать консультацию</span></a>
+        <a href="#" class="button button--mod click" data-target="modal-call-back"><span>Заказать консультацию</span></a>
 
-        <a href="#" class="button"><span>Оставить заявку</span></a>
+        <a href="#" class="button click" data-target="modal-call-back"><span>Оставить заявку</span></a>
       </div>
 
     </div>
@@ -121,7 +122,7 @@
   <!-- Основной контент  -->
   <main class="main">
     <!-- Первый экран  -->
-    <section class="hero">
+    <section class="hero" id="hero-section">
       <div class="wrapper">
         <div class="hero__content">
           <h2 class="title">Ищете <span>мастеров</span>
@@ -136,14 +137,14 @@
           <p class="hero__text">Подберем <b>лучших</b><i class="heart"></i><b>специалистов</b> для вашего салона
             эротического массажа</p>
 
-          <a href="#" class="button"><span>Оставить заявку</span></a>
+          <a href="#" class="button click" data-target="modal-call-back"><span>Оставить заявку</span></a>
         </div>
       </div>
     </section>
 
     <div class="sections-group">
       <!-- Почему выбирают нас  -->
-      <section class="advantages section">
+      <section class="advantages section" id="advantages-section">
         <div class="wrapper">
 
           <div class="section__header">
@@ -183,7 +184,7 @@
         </div>
       </section>
       <!-- Как происходит подбор мастеров  -->
-      <section class="steps section">
+      <section class="steps section" id="steps-section">
         <div class="wrapper">
 
           <div class="section__header">
@@ -239,7 +240,7 @@
         </div>
       </section>
       <!-- Отзывы наших довольных клиентов -->
-      <section class="reviews section">
+      <section class="reviews section" id="reviews-section">
         <div class="wrapper">
 
           <div class="section__header">
@@ -279,7 +280,7 @@
       </section>
     </div>
     <!-- Услуги и цены  -->
-    <section class="services section">
+    <section class="services section" id="services-section">
       <div class="wrapper">
 
         <div class="section__header">
@@ -324,7 +325,7 @@
                       администраторов).</b></li>
                 </ul>
 
-                <a class="button" href="#"><span>Выбрать тариф</span></a>
+                <a class="button click" href="#"><span>Выбрать тариф</span></a>
                 <div class="service-card__wrapper">
 
             </article>
@@ -362,7 +363,7 @@
                         в течение первого месяца</b> (до 5 мастеров и до 2 администраторов).</li>
                   </ul>
                 </div>
-                <a class="button" href="#"><span>Выбрать тариф</span></a>
+                <a class="button click" href="#"><span>Выбрать тариф</span></a>
               </div>
 
 
@@ -374,7 +375,7 @@
       </div>
     </section>
     <!-- Готовы найти мастеров  -->
-    <section class="call-to-action section">
+    <section class="call-to-action section" id="call-to-action-section">
       <div class="wrapper">
 
         <div class="section__header">
@@ -391,16 +392,16 @@
                     <div class="form__item">
                       <input type="text" name="user-name" id="" placeholder="Введите свое имя">
                     </div>
-                    <div class="form__item">
+                    <div class="form__item form__item--phone">
                       <input type="tel" name="user-phone" id="" placeholder="+7 (987) 654-32-10">
                     </div>
-                    <div class="form__item">
+                    <div class="form__item form__item--email form__item--mod">
                       <input type="email" name="user-email" id="" placeholder="Введите свой E-Mail">
                     </div>
                   </div>
-                  <button class="button button--red" type="button">Оставить заявку</button>
+                  <button class="form__button-submit button button--red click" type="button">Оставить заявку</button>
 
-                  <p class="info">Нажимая на кнопку, вы соглашаетесь с условиями <a href="#" target="_blank">Политики
+                  <p class="form__info">Нажимая на кнопку, вы соглашаетесь с условиями <a href="#" target="_blank">Политики
                       конфиденциальности</a> и <a href="#" target="_blank">Обработки персональных данных</a></p>
                 </form>
               </div>
@@ -412,9 +413,41 @@
 
   </main>
   <!-- подвал  -->
-  <footer class="rooter">
+  <footer class="footer section" id="footer-section">
     <div class="wrapper">
-      <span class="title">Мы всегда на связи и готовы помочь вам</span>
+
+      <div class="section__header">
+        <div class="section__header-col">
+          <span class="section-label">06 / контакты</span>
+          <h2 class="title">Мы всегда на связи<br>
+            и готовы помочь вам</h2>
+        </div>
+      </div>
+
+      <div class="section__body">
+        <div class="footer__contacts">
+          <span class="footer__contacts-label">Номер телефона:</span>
+          <a class="footer__contacts-link" href="#">+7 958 111 09 64</a>
+        </div>
+        <div class="footer__contacts">
+          <span class="footer__contacts-label">Почта:</span>
+          <a class="footer__contacts-link" href="#">admin@1relax.net</a>
+        </div>
+      </div>
+
+      <div class="section__footer">
+        <p class="footer__copy">© 2012-2024, 1relax.net</p>
+        <a href="#">Политика конфиденциальности</a>
+        <ul class="social-list list-reset">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link"><span>Telegram-канал</span></a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-list__link"><span>WhatsApp</span></a>
+          </li>
+        </ul>
+
+      </div>
     </div>
   </footer>
 
@@ -427,53 +460,28 @@
       <!-- тело формы - её видимая часть поверх подложки -->
       <div class="modal__body">
 
-        <h2 class="title">Заполните форму, и мы свяжемся с вами в ближайшее время</h2>
+        <h2 class="title modal__title">Заполните форму,<br> и мы свяжемся с вами<br> в ближайшее время</h2>
 
         <div class="modal__form form">
-          <form action="#">
-
-            <div class="form__grid">
-
-              <div class="form__col form__input">
-                <label for="user-name-1">Ваше имя</label>
-                <input type="text" name="user-name" placeholder="Введите свое имя" id="user-name-1" required>
+          <div class="form">
+            <form action="#">
+              <div class="form__grid form__grid--mod">
+                <div class="form__item">
+                  <input type="text" name="user-name" id="" placeholder="Введите свое имя">
+                </div>
+                <div class="form__item form__item--phone">
+                  <input type="tel" name="user-phone" id="" placeholder="+7 (987) 654-32-10">
+                </div>
+                <div class="form__item form__item--email form__item--mod">
+                  <input type="email" name="user-email" id="" placeholder="Введите свой E-Mail">
+                </div>
               </div>
+              <button class="form__button-submit button button--red click" type="button">Оставить заявку</button>
 
-              <div class="form__col form__input">
-                <label for="user-phone-1">Телефон</label>
-                <input type="tel" name="user-phone" placeholder="+7 (987) 654-32-10" id="user-phone-1" required>
-              </div>
-
-              <div class="form__col form__input">
-                <label for="user-phone-1">Телефон</label>
-                <input type="tel" name="user-phone" placeholder="Введите свой E-Mail" id="user-email-1">
-              </div>
-
-              <div class="form__col form__agree">
-                <input type="checkbox" name="user-agree" id="user-agree-1" required checked>
-                <label for="user-agree-1">Нажимая “Отправить” я даю согласие на обработку <a href="#">персональных
-                    данных</a></label>
-              </div>
-
-              <div class="form__col">
-                <button class="form__button form__submit button button--icon" type="submit"><span>Отправить</span>
-                  <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1 2.65517C1 1.74097 1.73255 1 2.63636 1H23.3636C24.2675 1 25 1.74097 25 2.65517V15.3448C25 16.259 24.2675 17 23.3636 17H2.63636C1.73255 17 1 16.259 1 15.3448V2.65517Z"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path
-                      d="M22.818 3.20696C22.818 3.20696 16.6156 9.65938 16.098 10.1074C15.5318 10.5973 14.3504 11.4828 12.9998 11.4828C11.6493 11.4828 10.4678 10.5934 9.90164 10.1035C9.38401 9.65551 3.18164 3.20696 3.18164 3.20696"
-                      stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                    <path d="M18.4551 10.3793L22.8187 14.7931" stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                    <path d="M7.54528 10.3793L3.18164 14.7931" stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                  </svg>
-                </button>
-              </div>
-
-
-            </div>
-
-          </form>
+              <p class="form__info">Нажимая на кнопку, вы соглашаетесь с условиями <a href="#" target="_blank">Политики
+                  конфиденциальности</a> и <a href="#" target="_blank">Обработки персональных данных</a></p>
+            </form>
+          </div>
 
         </div>
 

@@ -3,6 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--white-01);
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  backdrop-filter: blur(35px);
+  background: rgba(0, 0, 0, 0.05);
   span,
   span::after,
   span::before {
@@ -34,5 +40,7 @@
     width: 12px;
   }
 
-
+  &:hover {
+    background-color: #A32B29;;
+  }
 }

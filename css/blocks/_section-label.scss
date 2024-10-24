@@ -8,8 +8,14 @@
   line-height: 157%;
   border: 1px solid rgba(69, 71, 71, 0.15);
   border-radius: 100px;
-  padding: 10px 20px;
   height: 42px;
   padding: 6px 20px;
   color: rgba(69, 71, 71, 0.15);
+  transition: all 0.3s;
+  &:hover {
+    background: #6a0406c7 !important;
+    color: #fff !important;
+    border: #6a0406c7 !important;
+    backdrop-filter: none !important;
+  }
 }

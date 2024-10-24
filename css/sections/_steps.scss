@@ -12,4 +12,9 @@
     color: rgba(245, 245, 245, 0.35);
     border: 1px solid rgba(245, 245, 245, 0.35);
   }
+
+  @media (max-width: 1279px) {
+    padding-top: 55px;
+    padding-bottom: 32px;
+  }
 }

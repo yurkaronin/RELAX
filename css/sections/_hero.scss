@@ -7,6 +7,7 @@
   background-size: cover;
   padding-top: 180px;
   padding-bottom: 135px;
+  background-position: right;
   &__content {
     max-width: 560px;
   }
@@ -33,5 +34,16 @@
 
   .best-masters {
     margin-bottom: 15px;
+  }
+
+  @media (max-width: 1279px) {
+    padding-top: 340px;
+    min-height: initial;
+
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 130px;
+    background-position: center;
   }
 }

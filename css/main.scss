@@ -21,6 +21,7 @@
 @import "./blocks/section-label";
 @import "./blocks/card-item";
 @import "./blocks/service-card";
+@import "./blocks/social-list";
 
 
 @import "./blocks/form";
@@ -46,6 +47,7 @@
 // Активные состояния элементов
 @import "./activity/header-sticky";
 @import "./activity/mobile-nav-open";
+@import "./activity/modal-open";
 
 
 @media (max-width: 1504px) {}

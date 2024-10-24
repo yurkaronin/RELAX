@@ -24,13 +24,11 @@
   }
 
 
-  @media (max-width: 767px) {
-    font-size: 30px;
-    margin-bottom: 15px;
+  @media (max-width: 1279px) {
+    font-size: 38px !important;
+  }
 
-    &--two {
-      font-size: 22px;
-      margin-bottom: 15px;
-    }
+  @media (max-width: 767px) {
+    font-size: 30px !important;
   }
 }

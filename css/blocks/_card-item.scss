@@ -9,6 +9,10 @@
   color: rgba(255, 242, 244, 0.55);
   height: auto;
   width: 100%;
+  transition: all 0.3s;
+  &:hover {
+    scale: 1.03;
+  }
 
 
   &__image {
