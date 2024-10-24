@@ -63,7 +63,8 @@
         </div>
 
         <div class="header__right">
-          <a href="#" class="button button--mod click" data-target="modal-call-back"><span>Заказать консультацию</span></a>
+          <a href="#" class="button button--mod click" data-target="modal-call-back"><span>Заказать
+              консультацию</span></a>
           <!-- Кнопка меню  -->
           <button class="menu-button click js-menu-show-btn" title="Открыть выпадающее меню" type="button">
             <span class="menu-button__border"></span>
@@ -112,7 +113,8 @@
           </li>
         </ul>
 
-        <a href="#" class="button button--mod click" data-target="modal-call-back"><span>Заказать консультацию</span></a>
+        <a href="#" class="button button--mod click" data-target="modal-call-back"><span>Заказать
+            консультацию</span></a>
 
         <a href="#" class="button click" data-target="modal-call-back"><span>Оставить заявку</span></a>
       </div>
@@ -125,17 +127,26 @@
     <section class="hero" id="hero-section">
       <div class="wrapper">
         <div class="hero__content">
-          <h2 class="title">Ищете <span>мастеров</span>
+          <h2 class="title mobile-hide">Ищете <span>мастеров</span>
             или <span>администраторов</span> для вашего салона?
             Мы поможем!</h2>
+
+          <h2 class="title tablet-hide desktop-hide mobile-show">Ищете<br>
+            <span>мастеров</span> или <span><br>
+              администраторов</span><br>
+            для вашего<br>
+            салона? Мы<br>
+            поможем!
+          </h2>
 
           <div class="best-masters">
             <img class="best-masters__photo" src="./img/hero/best-masters.png" alt="#">
             <img class="best-masters__icon" src="./img/hero/xoxo.svg" alt="#">
           </div>
 
-          <p class="hero__text">Подберем <b>лучших</b><i class="heart"></i><b>специалистов</b> для вашего салона
-            эротического массажа</p>
+          <p class="hero__text">Подберем <b>лучших</b><i class="heart mobile-hide"></i><b>специалистов</b> для вашего
+            салона
+            эротического массажа<i class="heart tablet-hide desktop-hide mobile-show"></i></p>
 
           <a href="#" class="button click" data-target="modal-call-back"><span>Оставить заявку</span></a>
         </div>
@@ -161,20 +172,48 @@
             <ul class="section__card-group">
 
               <article class="card-item">
+
                 <span class="card-item__image">
-                  <img src="./img/card-item/1.png" alt="#" loading="lazy">
+                  <picture>
+                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                    <source media="(min-width: 768px)" srcset="./img/card-item/1.png">
+
+                    <!-- Изображение для экранов шириной менее 768 пикселей -->
+                    <source media="(max-width: 767px)" srcset="./img/card-item/1-mob.png">
+
+                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                    <img src="./img/card-item/1.png" alt="#" loading="lazy">
+                  </picture>
                 </span>
               </article>
 
               <article class="card-item">
                 <span class="card-item__image">
-                  <img src="./img/card-item/2.png" alt="#" loading="lazy">
+                  <picture>
+                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                    <source media="(min-width: 768px)" srcset="./img/card-item/2.png">
+
+                    <!-- Изображение для экранов шириной менее 768 пикселей -->
+                    <source media="(max-width: 767px)" srcset="./img/card-item/2-mob.png">
+
+                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                    <img src="./img/card-item/2.png" alt="#" loading="lazy">
+                  </picture>
                 </span>
               </article>
 
               <article class="card-item">
                 <span class="card-item__image">
-                  <img src="./img/card-item/3.png" alt="#" loading="lazy">
+                  <picture>
+                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                    <source media="(min-width: 768px)" srcset="./img/card-item/3.png">
+
+                    <!-- Изображение для экранов шириной менее 768 пикселей -->
+                    <source media="(max-width: 767px)" srcset="./img/card-item/3-mob.png">
+
+                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                    <img src="./img/card-item/3.png" alt="#" loading="lazy">
+                  </picture>
                 </span>
               </article>
 
@@ -201,12 +240,30 @@
 
               <article class="card-item card-item--mini">
                 <span class="card-item__image">
-                  <img src="./img/card-item/4.png" alt="#" loading="lazy">
+                  <picture>
+                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                    <source media="(min-width: 768px)" srcset="./img/card-item/4.png">
+
+                    <!-- Изображение для экранов шириной менее 768 пикселей -->
+                    <source media="(max-width: 767px)" srcset="./img/card-item/4-mob.png">
+
+                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                    <img src="./img/card-item/4.png" alt="#" loading="lazy">
+                  </picture>
                 </span>
               </article>
               <article class="card-item card-item--mini">
                 <span class="card-item__image">
-                  <img src="./img/card-item/5.png" alt="#" loading="lazy">
+                  <picture>
+                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                    <source media="(min-width: 768px)" srcset="./img/card-item/5.png">
+
+                    <!-- Изображение для экранов шириной менее 768 пикселей -->
+                    <source media="(max-width: 767px)" srcset="./img/card-item/5-mob.png">
+
+                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                    <img src="./img/card-item/5.png" alt="#" loading="lazy">
+                  </picture>
                 </span>
               </article>
 
@@ -218,17 +275,44 @@
 
               <article class="card-item card-item--mini">
                 <span class="card-item__image">
-                  <img src="./img/card-item/6.png" alt="#" loading="lazy">
+                  <picture>
+                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                    <source media="(min-width: 768px)" srcset="./img/card-item/6.png">
+
+                    <!-- Изображение для экранов шириной менее 768 пикселей -->
+                    <source media="(max-width: 767px)" srcset="./img/card-item/6-mob.png">
+
+                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                    <img src="./img/card-item/6.png" alt="#" loading="lazy">
+                  </picture>
                 </span>
               </article>
               <article class="card-item card-item--mini">
                 <span class="card-item__image">
-                  <img src="./img/card-item/7.png" alt="#" loading="lazy">
+                  <picture>
+                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                    <source media="(min-width: 768px)" srcset="./img/card-item/7.png">
+
+                    <!-- Изображение для экранов шириной менее 768 пикселей -->
+                    <source media="(max-width: 767px)" srcset="./img/card-item/7-mob.png">
+
+                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                    <img src="./img/card-item/7.png" alt="#" loading="lazy">
+                  </picture>
                 </span>
               </article>
               <article class="card-item card-item--mini">
                 <span class="card-item__image">
-                  <img src="./img/card-item/8.png" alt="#" loading="lazy">
+                  <picture>
+                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                    <source media="(min-width: 768px)" srcset="./img/card-item/8.png">
+
+                    <!-- Изображение для экранов шириной менее 768 пикселей -->
+                    <source media="(max-width: 767px)" srcset="./img/card-item/8-mob.png">
+
+                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                    <img src="./img/card-item/8.png" alt="#" loading="lazy">
+                  </picture>
                 </span>
               </article>
 
@@ -273,6 +357,7 @@
                   <img src="./img/reviews/slider-mini-photo-3.png" alt="#">
                   <img src="./img/reviews/slider-mini-photo-4.png" alt="#">
                 </div>
+                <p class="reviews__support desktop-hide tablet-hide mobile-show">Нажми на фотографию, чтобы читать следующий отзыв</p>
               </div>
             </div>
           </div>
@@ -401,7 +486,8 @@
                   </div>
                   <button class="form__button-submit button button--red click" type="button">Оставить заявку</button>
 
-                  <p class="form__info">Нажимая на кнопку, вы соглашаетесь с условиями <a href="#" target="_blank">Политики
+                  <p class="form__info">Нажимая на кнопку, вы соглашаетесь с условиями <a href="#"
+                      target="_blank">Политики
                       конфиденциальности</a> и <a href="#" target="_blank">Обработки персональных данных</a></p>
                 </form>
               </div>

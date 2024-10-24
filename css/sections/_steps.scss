@@ -1,9 +1,11 @@
 .steps {
   background-color: var(--black);
-  background-image: url(../img/bg/bg.png);
+  background-image: url(../img/steps/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  border-radius: 25px;
+  overflow: hidden;
 
   border-radius: 32px;
   padding-top: 130px;
@@ -16,5 +18,11 @@
   @media (max-width: 1279px) {
     padding-top: 55px;
     padding-bottom: 32px;
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/steps/bg-mob.jpg);
+    background-position: bottom right -1px;
+    padding-bottom: 280px;
   }
 }

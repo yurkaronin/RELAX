@@ -9,9 +9,11 @@
     margin-bottom: 60px;
     position: relative;
   }
+
   &__header-col {
     grid-column: 6/12;
   }
+
   &__card-group {
     display: grid;
     gap: 20px;
@@ -21,18 +23,21 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
     &--right {
       max-width: max-content;
       margin-left: auto;
       grid-template-columns: repeat(2, 1fr);
       margin-bottom: 20px;
     }
+
     &--left {
       max-width: max-content;
       margin-right: auto;
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
   &__subtitle {
     margin: 0;
   }
@@ -40,6 +45,7 @@
   .wrapper {
     position: relative;
   }
+
   .section-label {
     position: absolute;
     top: 0;
@@ -51,17 +57,22 @@
       margin-bottom: 38px;
     }
   }
+
   @media (max-width: 767px) {
     .section-label {
       position: initial;
       margin-bottom: 16px;
     }
+
     .section__header {
       display: block;
       margin-bottom: 20px;
     }
+
     &__card-group {
       grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      max-width: 100%;
     }
   }
 }

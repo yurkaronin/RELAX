@@ -80,6 +80,9 @@ textarea {
   .mobile-hide {
     display: none !important;
   }
+  .mobile-show {
+    display: block !important;
+  }
 }
 
 /* Скрывает элементы на экранах с шириной от 768px до 1379px */
