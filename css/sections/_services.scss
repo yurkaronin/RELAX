@@ -2,6 +2,7 @@
   background-image: url(../img/services/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: -32px;
   .section-label {
     border: 1px solid rgba(245, 245, 245, 0.15);
     color: rgba(245, 245, 245, 0.15);
@@ -14,8 +15,11 @@
   }
 
   @media (max-width: 767px) {
+    background-image: url(../img/services/bg-mob.png);
+    padding-bottom: 50px;
     &__list {
       grid-template-columns: 1fr;
+      gap: 16px;
     }
     .service-card__wrapper {
       padding: 0px 20px;

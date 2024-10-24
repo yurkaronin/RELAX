@@ -1,7 +1,7 @@
 .service-card {
   padding: 60px 0;
   // background-color: #000000;
-  background-image: url(../img/service-card/bg-1.jpg);
+  background-image: url(../img/service-card/bg-1.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 25px;
@@ -14,6 +14,7 @@
   color: rgba(245, 245, 245, 0.55);
   // border: 1px solid #470106;
   transition: all 0.3s;
+
   &:hover {
     scale: 1.02;
   }
@@ -25,19 +26,24 @@
   }
 
   &--mod {
-    background-image: url(../img/service-card/bg-2.jpg);
+    background-image: url(../img/service-card/bg-2.png);
   }
+
   &__wrapper {
     padding: 0 60px;
   }
+
   &__container {
     padding-right: 190px;
   }
+
   &__header {
     min-height: 180px;
   }
+
   &__text {
     margin: 0;
+
     a {
       color: #fee5bc;
       text-decoration: underline;
@@ -54,37 +60,45 @@
     line-height: 100%;
     color: #fff2f4;
   }
+
   .button {
     margin-top: 30px;
     max-width: 100%;
     width: 100%;
   }
+
   &__price-list {
     font-weight: 400;
     font-size: 17px;
     line-height: 129%;
     color: rgba(245, 245, 245, 0.55);
+
     b {
       font-weight: 600;
       color: rgba(245, 245, 245, 0.8);
     }
+
     li {
       margin-bottom: 6px;
     }
   }
+
   &__details-list {
     font-weight: 400;
     font-size: 17px;
     line-height: 129%;
     color: rgba(245, 245, 245, 0.55);
+
     b {
       font-weight: 600;
       color: rgba(245, 245, 245, 0.8);
     }
+
     li {
       margin-bottom: 16px;
     }
   }
+
   &__subtitle {
     display: grid;
     gap: 20px;
@@ -97,6 +111,7 @@
     position: relative;
     padding-inline: 60px;
     color: rgba(245, 245, 245, 0.9);
+
     &:before {
       content: "";
       display: block;
@@ -107,6 +122,7 @@
       left: 0;
       background-color: #470106;
     }
+
     &:after {
       content: "";
       display: block;
@@ -118,10 +134,12 @@
       background-color: #470106;
     }
   }
+
   &--mod &__subtitle {
     &:before {
       background-color: #024ba2;
     }
+
     &:after {
       background-color: #024ba2;
     }
@@ -129,13 +147,16 @@
 
   @media (max-width: 1279px) {
     padding: 42px 0;
+
     .service-card__title {
       font-size: 30px;
       margin-bottom: 24px;
     }
+
     .service-card__wrapper {
       padding: 0 42px;
     }
+
     .service-card__subtitle {
       gap: 16px;
       padding-top: 16px;
@@ -147,8 +168,24 @@
   }
 
   @media (max-width: 767px) {
+    background-image: url(../img/service-card/bg-1-mob.png);
+    &--mod {
+      background-image: url(../img/service-card/bg-2-mob.png);
+    }
     .service-card__container {
       padding-right: 0;
+    }
+
+    .service-card__price-list {
+      font-size: 15px;
+    }
+
+    .service-card__header {
+      min-height: initial;
+    }
+
+    .service-card__details-list {
+      font-size: 15px;
     }
   }
 }

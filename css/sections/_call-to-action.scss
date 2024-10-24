@@ -11,18 +11,16 @@
   margin-bottom: 20px;
 
   .title {
-    // font-family: var(--second-family);
-    // font-weight: 400;
-    // font-size: 50px;
     color: #454747;
-    // margin: 0;
     margin-bottom: 25px;
   }
+
   .section-label {
     backdrop-filter: blur(51px);
     color: rgb(48 48 48);
     border: 1px solid rgb(48 48 48);
   }
+
   .section__header-col {
     grid-column: 6/13;
   }
@@ -41,16 +39,26 @@
   }
 
   @media (max-width: 767px) {
-    padding-top: 50px;
-    padding-bottom: 32px;
+    background-image: url(../img/call-to-action/bg-mob.png);
+    padding-top: 65px;
+    padding-bottom: 345px;
+    background-position: bottom center;
 
     .form {
       margin-top: 28px;
-      padding: 20px;
+      padding: 0;
+      background: transparent;
+      border: none;
+      backdrop-filter: none;
     }
+
     .form__info {
       font-size: 13px;
       color: #ffffff;
+      font-size: 12px;
+      line-height: 125%;
+      text-align: center;
+      color: rgba(69, 71, 71, 0.45);
     }
   }
 }

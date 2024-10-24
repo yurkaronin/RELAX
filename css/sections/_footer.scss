@@ -88,15 +88,31 @@
   }
 
   @media (max-width: 767px) {
+    background-image: url(../img/footer/bg-mob.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    padding-bottom: 60px;
+
     .footer__contacts {
       gap: 12px;
       grid-template-columns: 1fr;
       margin-bottom: 16px;
     }
+    .footer__contacts-link {
+      font-size: 25px;
+    }
+    .title {
+      max-width: 290px;
+      text-wrap: balance;
+      margin-bottom: 50px;
+    }
     .section__footer {
       grid-template-columns: 1fr;
       gap: 6px;
       margin-top: 16px;
+    }
+    .section__body {
+      margin-bottom: 90px;
     }
   }
 }
