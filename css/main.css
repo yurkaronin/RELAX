@@ -22,6 +22,7 @@
   --modal-bg: #080808c4;
   --modal-icon: #fff;
   --modal-accent: ;
+  --header-height: 65px;
 }
 
 /* inter-100 - cyrillic_latin */
@@ -1491,10 +1492,15 @@ textarea {
   background-image: url(../img/mobile-nav/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  overflow: auto;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.mobile-nav .wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-nav__list {
   margin-bottom: 32px;
@@ -2127,6 +2133,7 @@ textarea {
           backdrop-filter: blur(55px);
   background: rgba(0, 0, 0, 0.25);
   border: 1px solid var(--white-01);
+  color: #ffffff;
 }
 @media (max-width: 950px) {
   .modal__body {
@@ -2137,18 +2144,18 @@ textarea {
 }
 @media (max-width: 767px) {
   .modal__body {
-    padding: 17px 20px 30px;
+    padding: 40px 20px;
   }
   .modal__title {
-    font-size: 28px;
+    font-size: 22px !important;
     line-height: 125%;
   }
   .modal__title::before {
     width: 270px;
   }
   .modal__close {
-    top: 0;
-    right: 0;
+    top: 6px;
+    right: 6px;
   }
   .modal__close svg {
     scale: 0.8;
