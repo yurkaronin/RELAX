@@ -1693,9 +1693,7 @@ textarea {
   margin-bottom: 25px;
 }
 .reviews__grid {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 460px 1fr;
+  display: flex;
   position: relative;
   align-items: flex-end;
 }
@@ -1714,14 +1712,21 @@ textarea {
 }
 .reviews__col-left {
   position: relative;
+  width: 460px;
 }
 .reviews__col-right {
   position: relative;
+  width: calc(100% - 460px);
+  margin-left: 32px;
+}
+.reviews__slider-big {
+  border-radius: 25px;
 }
 .reviews__slider-min {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+.reviews__slider-min .swiper {
+  width: 100%;
 }
 .reviews__slider-text {
   margin-bottom: 40px;
@@ -1731,6 +1736,12 @@ textarea {
   line-height: 129%;
   color: rgba(69, 71, 71, 0.55);
   font-style: normal;
+}
+.reviews__slider-text .swiper {
+  width: 100%;
+}
+.reviews__slider-text .swiper-slide {
+  width: 100%;
 }
 .reviews__slider-text span {
   display: flex;

@@ -29,6 +29,35 @@ document.addEventListener("DOMContentLoaded", function () {
     touchpadSupport: true,
   });
 
+
+  // Слайдеры в отзывах
+  // большие фото
+  if (document.querySelector(".js-reviews-slider-big")) {
+    var reviewsSliderBig = new Swiper(".js-reviews-slider-big .swiper", {
+      loop: true,
+      spaceBetween: 16,
+      effect: "fade",
+    });
+  }
+  if (document.querySelector(".js-reviews-slider-text")) {
+    var reviewsSliderText = new Swiper(".js-reviews-slider-text .swiper", {
+      loop: true,
+      spaceBetween: 16,
+      // effect: "fade",
+    });
+  }
+
+  if (document.querySelector(".js-reviews-slider-min")) {
+    var reviewsSliderMin = new Swiper(".js-reviews-slider-min .swiper", {
+      loop: true,
+      spaceBetween: 16,
+      slidesPerView: 3,
+    });
+  }
+
+
+
+
 });
 
 

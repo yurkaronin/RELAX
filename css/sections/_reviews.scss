@@ -17,9 +17,7 @@
   }
 
   &__grid {
-    display: grid;
-    gap: 32px;
-    grid-template-columns: 460px 1fr;
+    display: flex;
     position: relative;
     align-items: flex-end;
 
@@ -40,16 +38,27 @@
 
   &__col-left {
     position: relative;
+    width: 460px;
   }
 
   &__col-right {
     position: relative;
+    width: calc(100% - 460px);
+    margin-left: 32px;
+  }
+  &__slider-big {
+    border-radius: 25px;
+
   }
 
   &__slider-min {
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    .swiper {
+      width: 100%;
+    }
+    // .swiper-slide {
+    //   width: 100%;
+    // }
   }
 
   &__slider-text {
@@ -60,6 +69,13 @@
     line-height: 129%;
     color: rgba(69, 71, 71, 0.55);
     font-style: normal;
+
+    .swiper {
+      width: 100%;
+    }
+    .swiper-slide {
+      width: 100%;
+    }
 
     span {
       display: flex;
