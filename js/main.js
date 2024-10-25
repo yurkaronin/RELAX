@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var swiper2 = new Swiper(".js-reviews-slider-big .swiper", {
       loop: true,
       spaceBetween: 16,
-      // autoplay: {
-      //   delay: 4000,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
       navigation: {
         nextEl: ".js-reviews-slider-big .swiper-button-next",
         prevEl: ".js-reviews-slider-big .swiper-button-prev",
