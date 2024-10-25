@@ -46,7 +46,8 @@
     position: relative;
   }
 
-  .section-label {
+  .section-label,
+  .empty-label {
     position: absolute;
     top: 0;
     left: 0;

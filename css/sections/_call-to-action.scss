@@ -3,12 +3,13 @@
   border-radius: 20px;
   background-color: #fff;
   color: rgba(69, 71, 71, 0.8);
-  background-image: url(../img/call-to-action/bg.jpg);
+  background-image: url(../img/call-to-action/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 130px;
   padding-bottom: 100px;
   margin-bottom: 20px;
+  background-position: left top;
 
   .title {
     color: #454747;
@@ -16,10 +17,12 @@
   }
 
   .section-label {
+    -webkit-backdrop-filter: blur(51px);
     backdrop-filter: blur(51px);
-    color: rgb(48 48 48);
-    border: 1px solid rgb(48 48 48);
-  }
+    color: rgb(48 48 48 / 65%);
+    border: 1px solid rgb(48 48 48 / 31%);
+    background-color: #ffffff8a;
+}
 
   .section__header-col {
     grid-column: 6/13;
