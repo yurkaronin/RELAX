@@ -24,4 +24,26 @@
       background-image: url(../img/icon-heart-red.svg);
     }
   }
+
+  &--mod {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    width: 60px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: -5px;
+    margin-inline: 9px;
+
+
+    &::before {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='15' height='13' viewBox='0 0 15 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.31538 13C1.71034 8.57842 0 6.53572 0 4.18677C0 1.88608 1.64027 0 3.88629 0C5.44496 0 6.60147 0.9572 7.31538 2.31506C8.02926 0.957257 9.18577 0 10.7445 0C12.9908 0 14.6308 1.8864 14.6308 4.18677C14.6308 6.33346 13.329 8.25643 7.31538 13Z' fill='%23B71B25'/%3e%3c/svg%3e ");
+
+      width: 15px;
+      height: 13px;
+      position: absolute;
+      top: 13px;
+      left: 22px;
+    }
+  }
 }

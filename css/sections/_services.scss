@@ -7,6 +7,9 @@
     border: 1px solid rgba(245, 245, 245, 0.15);
     color: rgba(245, 245, 245, 0.15);
   }
+  .section__subtitle {
+    color: rgba(245, 245, 245, 0.8);
+  }
   &__list {
     display: grid;
     gap: 32px;

@@ -68,7 +68,33 @@
               консультацию</span></a>
           <!-- Кнопка меню  -->
           <button class="menu-button click js-menu-show-btn" title="Открыть выпадающее меню" type="button">
-            <span class="menu-button__border"></span>
+            <!-- <span class="menu-button__border"></span> -->
+            <span class="icon-off">
+              <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.75 1.29175H5.41667H13.75ZM13.75 6.50008H1.25H13.75ZM13.75 11.7084H4.89583H13.75Z"
+                  fill="#FFF2F4" />
+                <path d="M13.75 1.29175H5.41667M13.75 6.50008H1.25M13.75 11.7084H4.89583" stroke="#FFF2F4"
+                  stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="icon-on">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_91_4793)">
+                  <path
+                    d="M0.947952 9.93744C0.702791 9.9517 0.461674 9.87019 0.275444 9.71011C-0.0918148 9.34067 -0.0918148 8.74399 0.275444 8.37455L8.31722 0.332744C8.6992 -0.0246894 9.29859 -0.00481991 9.65603 0.377162C9.97924 0.722587 9.99808 1.25351 9.70013 1.62096L1.61098 9.71011C1.42717 9.86788 1.1899 9.94923 0.947952 9.93744Z"
+                    fill="#FFF2F4" />
+                  <path
+                    d="M8.9834 9.93746C8.73491 9.93641 8.49679 9.83776 8.32035 9.66278L0.278542 1.62095C-0.0617048 1.22362 -0.0154465 0.625662 0.381882 0.285384C0.736509 -0.0183051 1.25951 -0.0183051 1.61411 0.285384L9.70326 8.32719C10.0851 8.68472 10.1049 9.28414 9.74737 9.66603C9.73314 9.68122 9.71845 9.69591 9.70326 9.71013C9.60526 9.79535 9.49079 9.8595 9.36696 9.89861C9.24312 9.93771 9.11257 9.95094 8.9834 9.93746Z"
+                    fill="#FFF2F4" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_91_4793">
+                    <rect width="10" height="10" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+
           </button>
         </div>
       </div>
@@ -127,29 +153,34 @@
     <!-- Первый экран  -->
     <section class="hero" id="hero-section">
       <div class="wrapper">
-        <div class="hero__content">
-          <h2 class="title mobile-hide">Ищете <span>мастеров</span>
-            или <span>администраторов</span> для вашего салона?
-            Мы поможем!</h2>
+        <div class="container">
+          <div class="hero__content">
+            <h2 class="title mobile-hide">Ищете <span>мастеров</span>
+              или <span>администраторов</span> для вашего салона?
+              Мы поможем!</h2>
 
-          <h2 class="title tablet-hide desktop-hide mobile-show">Ищете<br>
-            <span>мастеров</span> или <span><br>
-              администраторов</span><br>
-            для вашего<br>
-            салона? Мы<br>
-            поможем!
-          </h2>
+            <h2 class="title tablet-hide desktop-hide mobile-show">Ищете<br>
+              <span>мастеров</span> или <span><br>
+                администраторов</span><br>
+              для вашего<br>
+              салона? Мы<br>
+              поможем!
+            </h2>
 
-          <div class="best-masters">
-            <img class="best-masters__photo" src="./img/hero/best-masters.png" alt="#">
-            <img class="best-masters__icon" src="./img/hero/xoxo.svg" alt="#">
+            <div class="best-masters">
+              <img class="best-masters__photo" src="./img/hero/best-masters.png" alt="#">
+              <img class="best-masters__icon" src="./img/hero/xoxo.svg" alt="#">
+            </div>
+
+            <p class="hero__text mobile-hide">Подберем <b>лучших</b><i class="heart"></i><b> специалистов</b>
+              для вашего салона эротического массажа</p>
+
+            <p class="hero__text desktop-hide tablet-hide mobile-show">Подберем <b>лучших специалистов</b><br>
+              для вашего салона эротического<br>
+              массажа<i class="heart tablet-hide desktop-hide"></i></p>
+
+            <a href="#" class="button click" data-target="modal-call-back"><span>Оставить заявку</span></a>
           </div>
-
-          <p class="hero__text">Подберем <b>лучших</b><i class="heart mobile-hide"></i><b> специалистов</b> для вашего
-            салона
-            эротического массажа<i class="heart tablet-hide desktop-hide mobile-show"></i></p>
-
-          <a href="#" class="button click" data-target="modal-call-back"><span>Оставить заявку</span></a>
         </div>
       </div>
     </section>
@@ -158,300 +189,326 @@
       <!-- Почему выбирают нас  -->
       <section class="advantages section" id="advantages-section">
         <div class="wrapper">
+          <div class="container">
 
-          <div class="section__header">
-            <div class="section__header-col">
-              <span class="section-label">01 / преимущества</span>
-              <h2 class="title">Почему<br>выбирают нас?</h2>
-              <p class="section__subtitle">Мы знаем все тонкости индустрии мужских<i class="heart heart--red"></i>спа и
-                салонов эротического
-                массажа. Наш опыт помогает находить
-                мастеров, которые точно подойдут вашему салону.</p>
+            <div class="section__header">
+              <div class="section__header-col">
+                <span class="section-label">01 / преимущества</span>
+                <h2 class="title">Почему<br>выбирают нас?</h2>
+                <p class="section__subtitle mobile-hide">Мы знаем все тонкости индустрии мужских<i
+                    class="heart heart--red"></i>спа и
+                  салонов эротического
+                  массажа.</p>
+                <p class="section__subtitle mobile-hide">Наш опыт помогает находить
+                  мастеров, которые точно подойдут вашему салону.</p>
+
+                <p class="section__subtitle desktop-hide tablet-hide mobile-show">
+                  Мы знаем все тонкости индустрии<br>
+                  мужских<i class="heart heart--red"></i>спа и салонов<br>
+                  эротического массажа.</p>
+                <p class="section__subtitle desktop-hide tablet-hide mobile-show">Наш опыт помогает находить<br>
+                  мастеров, которые точно подойдут<br>
+                  вашему салону.</p>
+              </div>
             </div>
-          </div>
-          <div class="section__body">
-            <ul class="section__card-group">
+            <div class="section__body">
+              <ul class="section__card-group">
 
-              <article class="card-item">
+                <article class="card-item">
 
-                <span class="card-item__image">
-                  <picture>
-                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
-                    <source media="(min-width: 768px)" srcset="./img/card-item/1.png">
+                  <span class="card-item__image">
+                    <picture>
+                      <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                      <source media="(min-width: 768px)" srcset="./img/card-item/1.png">
 
-                    <!-- Изображение для экранов шириной менее 768 пикселей -->
-                    <source media="(max-width: 767px)" srcset="./img/card-item/1-mob.png">
+                      <!-- Изображение для экранов шириной менее 768 пикселей -->
+                      <source media="(max-width: 767px)" srcset="./img/card-item/1-mob.png">
 
-                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
-                    <img src="./img/card-item/1.png" alt="#" loading="lazy">
-                  </picture>
-                </span>
-              </article>
+                      <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                      <img src="./img/card-item/1.png" alt="#" loading="lazy">
+                    </picture>
+                  </span>
+                </article>
 
-              <article class="card-item">
-                <span class="card-item__image">
-                  <picture>
-                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
-                    <source media="(min-width: 768px)" srcset="./img/card-item/2.png">
+                <article class="card-item">
+                  <span class="card-item__image">
+                    <picture>
+                      <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                      <source media="(min-width: 768px)" srcset="./img/card-item/2.png">
 
-                    <!-- Изображение для экранов шириной менее 768 пикселей -->
-                    <source media="(max-width: 767px)" srcset="./img/card-item/2-mob.png">
+                      <!-- Изображение для экранов шириной менее 768 пикселей -->
+                      <source media="(max-width: 767px)" srcset="./img/card-item/2-mob.png">
 
-                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
-                    <img src="./img/card-item/2.png" alt="#" loading="lazy">
-                  </picture>
-                </span>
-              </article>
+                      <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                      <img src="./img/card-item/2.png" alt="#" loading="lazy">
+                    </picture>
+                  </span>
+                </article>
 
-              <article class="card-item">
-                <span class="card-item__image">
-                  <picture>
-                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
-                    <source media="(min-width: 768px)" srcset="./img/card-item/3.png">
+                <article class="card-item">
+                  <span class="card-item__image">
+                    <picture>
+                      <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                      <source media="(min-width: 768px)" srcset="./img/card-item/3.png">
 
-                    <!-- Изображение для экранов шириной менее 768 пикселей -->
-                    <source media="(max-width: 767px)" srcset="./img/card-item/3-mob.png">
+                      <!-- Изображение для экранов шириной менее 768 пикселей -->
+                      <source media="(max-width: 767px)" srcset="./img/card-item/3-mob.png">
 
-                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
-                    <img src="./img/card-item/3.png" alt="#" loading="lazy">
-                  </picture>
-                </span>
-              </article>
+                      <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                      <img src="./img/card-item/3.png" alt="#" loading="lazy">
+                    </picture>
+                  </span>
+                </article>
 
 
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <!-- Как происходит подбор мастеров  -->
       <section class="steps section" id="steps-section">
         <div class="wrapper">
+          <div class="container">
+            <div class="section__header">
+              <div class="section__header-col">
+                <span class="section-label">02 / процесс найма</span>
 
-          <div class="section__header">
-            <div class="section__header-col">
-              <span class="section-label">02 / процесс найма</span>
-              <h2 class="title"><span>Как</span> происходит <br>
-                подбор мастеров?</h2>
-              <p class="section__subtitle">Мы обеспечим быстрый и качественный процесс найма, <br>который сэкономит ваше
-                время и гарантирует результат.</p>
+                <h2 class="title mobile-hide"><span>Как</span> происходит <br>
+                  подбор мастеров?</h2>
+
+                <h2 class="title desktop-hide tablet-hide mobile-show"><span>Как</span><br>
+                  происходит<br>
+                  подбор мастеров?</h2>
+
+                <p class="section__subtitle mobile-hide">Мы обеспечим быстрый и качественный процесс найма, <br>который
+                  сэкономит
+                  ваше время и гарантирует результат.</p>
+
+                <p class="section__subtitle desktop-hide tablet-hide mobile-show">
+                  Мы обеспечим быстрый<br>
+                  и качественный процесс найма,<br>
+                  который сэкономит ваше время<br>
+                  и гарантирует результат.</p>
+              </div>
             </div>
+            <div class="section__body">
+              <ul class="section__card-group section__card-group--right">
+
+                <article class="card-item card-item--mini">
+                  <span class="card-item__image">
+                    <picture>
+                      <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                      <source media="(min-width: 768px)" srcset="./img/card-item/4.png">
+
+                      <!-- Изображение для экранов шириной менее 768 пикселей -->
+                      <source media="(max-width: 767px)" srcset="./img/card-item/4-mob.png">
+
+                      <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                      <img src="./img/card-item/4.png" alt="#" loading="lazy">
+                    </picture>
+                  </span>
+                </article>
+                <article class="card-item card-item--mini">
+                  <span class="card-item__image">
+                    <picture>
+                      <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                      <source media="(min-width: 768px)" srcset="./img/card-item/5.png">
+
+                      <!-- Изображение для экранов шириной менее 768 пикселей -->
+                      <source media="(max-width: 767px)" srcset="./img/card-item/5-mob.png">
+
+                      <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                      <img src="./img/card-item/5.png" alt="#" loading="lazy">
+                    </picture>
+                  </span>
+                </article>
+
+
+
+              </ul>
+
+              <ul class="section__card-group section__card-group--left">
+
+                <article class="card-item card-item--mini">
+                  <span class="card-item__image">
+                    <picture>
+                      <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                      <source media="(min-width: 768px)" srcset="./img/card-item/6.png">
+
+                      <!-- Изображение для экранов шириной менее 768 пикселей -->
+                      <source media="(max-width: 767px)" srcset="./img/card-item/6-mob.png">
+
+                      <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                      <img src="./img/card-item/6.png" alt="#" loading="lazy">
+                    </picture>
+                  </span>
+                </article>
+                <article class="card-item card-item--mini">
+                  <span class="card-item__image">
+                    <picture>
+                      <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                      <source media="(min-width: 768px)" srcset="./img/card-item/7.png">
+
+                      <!-- Изображение для экранов шириной менее 768 пикселей -->
+                      <source media="(max-width: 767px)" srcset="./img/card-item/7-mob.png">
+
+                      <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                      <img src="./img/card-item/7.png" alt="#" loading="lazy">
+                    </picture>
+                  </span>
+                </article>
+                <article class="card-item card-item--mini">
+                  <span class="card-item__image">
+                    <picture>
+                      <!-- Изображение для экранов шириной 768 пикселей и больше -->
+                      <source media="(min-width: 768px)" srcset="./img/card-item/8.png">
+
+                      <!-- Изображение для экранов шириной менее 768 пикселей -->
+                      <source media="(max-width: 767px)" srcset="./img/card-item/8-mob.png">
+
+                      <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
+                      <img src="./img/card-item/8.png" alt="#" loading="lazy">
+                    </picture>
+                  </span>
+                </article>
+
+
+
+              </ul>
+            </div>
+
           </div>
-          <div class="section__body">
-            <ul class="section__card-group section__card-group--right">
-
-              <article class="card-item card-item--mini">
-                <span class="card-item__image">
-                  <picture>
-                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
-                    <source media="(min-width: 768px)" srcset="./img/card-item/4.png">
-
-                    <!-- Изображение для экранов шириной менее 768 пикселей -->
-                    <source media="(max-width: 767px)" srcset="./img/card-item/4-mob.png">
-
-                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
-                    <img src="./img/card-item/4.png" alt="#" loading="lazy">
-                  </picture>
-                </span>
-              </article>
-              <article class="card-item card-item--mini">
-                <span class="card-item__image">
-                  <picture>
-                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
-                    <source media="(min-width: 768px)" srcset="./img/card-item/5.png">
-
-                    <!-- Изображение для экранов шириной менее 768 пикселей -->
-                    <source media="(max-width: 767px)" srcset="./img/card-item/5-mob.png">
-
-                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
-                    <img src="./img/card-item/5.png" alt="#" loading="lazy">
-                  </picture>
-                </span>
-              </article>
-
-
-
-            </ul>
-
-            <ul class="section__card-group section__card-group--left">
-
-              <article class="card-item card-item--mini">
-                <span class="card-item__image">
-                  <picture>
-                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
-                    <source media="(min-width: 768px)" srcset="./img/card-item/6.png">
-
-                    <!-- Изображение для экранов шириной менее 768 пикселей -->
-                    <source media="(max-width: 767px)" srcset="./img/card-item/6-mob.png">
-
-                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
-                    <img src="./img/card-item/6.png" alt="#" loading="lazy">
-                  </picture>
-                </span>
-              </article>
-              <article class="card-item card-item--mini">
-                <span class="card-item__image">
-                  <picture>
-                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
-                    <source media="(min-width: 768px)" srcset="./img/card-item/7.png">
-
-                    <!-- Изображение для экранов шириной менее 768 пикселей -->
-                    <source media="(max-width: 767px)" srcset="./img/card-item/7-mob.png">
-
-                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
-                    <img src="./img/card-item/7.png" alt="#" loading="lazy">
-                  </picture>
-                </span>
-              </article>
-              <article class="card-item card-item--mini">
-                <span class="card-item__image">
-                  <picture>
-                    <!-- Изображение для экранов шириной 768 пикселей и больше -->
-                    <source media="(min-width: 768px)" srcset="./img/card-item/8.png">
-
-                    <!-- Изображение для экранов шириной менее 768 пикселей -->
-                    <source media="(max-width: 767px)" srcset="./img/card-item/8-mob.png">
-
-                    <!-- Фallback-изображение, которое будет использоваться, если браузер не поддерживает элемент <picture> -->
-                    <img src="./img/card-item/8.png" alt="#" loading="lazy">
-                  </picture>
-                </span>
-              </article>
-
-
-
-            </ul>
-          </div>
-
         </div>
       </section>
 
       <!-- Отзывы наших довольных клиентов -->
       <section class="reviews section" id="reviews-section">
         <div class="wrapper">
-
-          <div class="section__header">
-            <div class="section__header-col">
-              <span class="section-label">03 / отзывы</span>
-              <h2 class="title">Отзывы наших довольных клиентов</h2>
-              <p class="section__subtitle">Отзывы тех, кто уже доверил нам подбор мастеров для своих салонов.</p>
-            </div>
-          </div>
-          <div class="section__body">
-            <div class="reviews__group">
-              <div class="reviews__slider-big js-reviews-slider-big">
-
-                <!-- Swiper -->
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="reviews__slide">
-                        <div class="reviews__photo-big">
-                          <img src="./img/reviews/slider-big-photo-1.png" alt="#">
-                        </div>
-                        <div class="reviews__text">
-                          <span>#1</span>
-                          <h3>Cпа салон «Красная Роза»</h3>
-                          <blockquote>«Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось
-                            иметь
-                            ласковых
-                            хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному
-                            фонду <a href="#">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой
-                            новый
-                            дом.»</blockquote>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="reviews__slide">
-                        <div class="reviews__photo-big">
-                          <img src="./img/reviews/slider-big-photo-2.png" alt="#">
-                        </div>
-                        <div class="reviews__text">
-                          <span>#2</span>
-                          <h3>Cпа салон «Красная Роза»</h3>фыв
-                          <blockquote>«Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось
-                            иметь
-                            ласковых
-                            хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному
-                            фонду <a href="#">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой
-                            новый
-                            дом.»</blockquote>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="reviews__slide">
-                        <div class="reviews__photo-big">
-                          <img src="./img/reviews/slider-big-photo-3.png" alt="#">
-                        </div>
-                        <div class="reviews__text">
-                          <span>#3</span>
-                          <h3>Cпа салон «Красная Роза»</h3>
-                          <blockquote>«Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось
-                            иметь
-                            ласковых
-                            хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному
-                            фонду <a href="#">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой
-                            новый
-                            дом.»</blockquote>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="reviews__slide">
-                        <div class="reviews__photo-big">
-                          <img src="./img/reviews/slider-big-photo-4.png" alt="#">
-                        </div>
-                        <div class="reviews__text">
-                          <span>#4</span>
-                          <h3>Cпа салон «Красная Роза»</h3>
-                          <blockquote>«Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось
-                            иметь
-                            ласковых
-                            хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному
-                            фонду <a href="#">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой
-                            новый
-                            дом.»</blockquote>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                </div>
+          <div class="container">
+            <div class="section__header">
+              <div class="section__header-col">
+                <span class="section-label">03 / отзывы</span>
+                <h2 class="title">Отзывы наших довольных клиентов</h2>
+                <p class="section__subtitle">Отзывы тех, кто уже доверил нам подбор мастеров для своих салонов.</p>
               </div>
+            </div>
+            <div class="section__body">
+              <div class="reviews__group">
+                <div class="reviews__slider-big js-reviews-slider-big">
 
-              <div class="reviews__thumbs">
-                <div class="reviews__slider-min js-reviews-slider-min">
                   <!-- Swiper -->
                   <div class="swiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                        <img src="./img/reviews/slider-mini-photo-1.png" alt="#">
+                        <div class="reviews__slide">
+                          <div class="reviews__photo-big">
+                            <img src="./img/reviews/slider-big-photo-1.png" alt="#">
+                          </div>
+                          <div class="reviews__text">
+                            <span>#1</span>
+                            <h3>Cпа салон «Красная Роза»</h3>
+                            <blockquote>«Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось
+                              иметь
+                              ласковых
+                              хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному
+                              фонду <a href="#">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой
+                              новый
+                              дом.»</blockquote>
+                          </div>
+                        </div>
                       </div>
                       <div class="swiper-slide">
-                        <img src="./img/reviews/slider-mini-photo-2.png" alt="#">
+                        <div class="reviews__slide">
+                          <div class="reviews__photo-big">
+                            <img src="./img/reviews/slider-big-photo-2.png" alt="#">
+                          </div>
+                          <div class="reviews__text">
+                            <span>#2</span>
+                            <h3>Cпа салон «Красная Роза»</h3>
+                            <blockquote>«Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось
+                              иметь
+                              ласковых
+                              хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному
+                              фонду <a href="#">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой
+                              новый
+                              дом.»</blockquote>
+                          </div>
+                        </div>
                       </div>
                       <div class="swiper-slide">
-                        <img src="./img/reviews/slider-mini-photo-3.png" alt="#">
+                        <div class="reviews__slide">
+                          <div class="reviews__photo-big">
+                            <img src="./img/reviews/slider-big-photo-3.png" alt="#">
+                          </div>
+                          <div class="reviews__text">
+                            <span>#3</span>
+                            <h3>Cпа салон «Красная Роза»</h3>
+                            <blockquote>«Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось
+                              иметь
+                              ласковых
+                              хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному
+                              фонду <a href="#">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой
+                              новый
+                              дом.»</blockquote>
+                          </div>
+                        </div>
                       </div>
                       <div class="swiper-slide">
-                        <img src="./img/reviews/slider-mini-photo-4.png" alt="#">
+                        <div class="reviews__slide">
+                          <div class="reviews__photo-big">
+                            <img src="./img/reviews/slider-big-photo-4.png" alt="#">
+                          </div>
+                          <div class="reviews__text">
+                            <span>#4</span>
+                            <h3>Cпа салон «Красная Роза»</h3>
+                            <blockquote>«Мы любим животных и стараемся поддерживать тех из них, кому не посчастливилось
+                              иметь
+                              ласковых
+                              хозяев и тёплый кров. Один из проверенных способов это сделать — помочь благотворительному
+                              фонду <a href="#">«Луч Добра»</a>. Благодаря их труду ежегодно сотни питомцев находят свой
+                              новый
+                              дом.»</blockquote>
+                          </div>
+                        </div>
                       </div>
 
                     </div>
+
+                    <!-- <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div> -->
                   </div>
                 </div>
-                <p class="reviews__support">
-                  <span class="reviews__support-icon"><img src="./img/icon-finger.svg" alt="#"></span>Нажми на
-                  фотографию, чтобы читать следующий отзыв
-                </p>
+
+                <div class="reviews__thumbs">
+                  <div class="reviews__slider-min js-reviews-slider-min">
+                    <!-- Swiper -->
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./img/reviews/slider-mini-photo-1.png" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/reviews/slider-mini-photo-2.png" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/reviews/slider-mini-photo-3.png" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./img/reviews/slider-mini-photo-4.png" alt="#">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <p class="reviews__support">
+                    <span class="reviews__support-icon"><img src="./img/icon-finger.svg" alt="#"></span>Нажми на
+                    фотографию, чтобы читать следующий отзыв
+                  </p>
+                </div>
               </div>
+
             </div>
-
-
           </div>
         </div>
       </section>
@@ -459,129 +516,145 @@
     <!-- Услуги и цены  -->
     <section class="services section" id="services-section">
       <div class="wrapper">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__header-col">
+              <span class="section-label">04 / пакеты</span>
+              <h2 class="title"><span>Услуги</span> и цены</h2>
+              <p class="section__subtitle mobile-hide">Выберите оптимальный тариф для вашего салона и получите
+                качественный подбор
+                персонала.</p>
+              <p class="section__subtitle desktop-hide tablet-hide mobile-show">
+                Выберите оптимальный тариф<br>
+                для вашего салона и получите<br>
+                качественный подбор персонала.</p>
 
-        <div class="section__header">
-          <div class="section__header-col">
-            <span class="section-label">04 / пакеты</span>
-            <h2 class="title"><span>Услуги</span> и цены</h2>
-            <p class="section__subtitle">Выберите оптимальный тариф для вашего салона и получите качественный подбор
-              персонала.</p>
+            </div>
           </div>
-        </div>
-        <div class="section__body">
+          <div class="section__body">
 
-          <div class="services__list">
+            <div class="services__list">
 
-            <article class="service-card">
-              <div class="service-card__header">
-                <div class="service-card__wrapper">
-                  <h3 class="service-card__title">Стандартный<br>
-                    найм</h3>
-                  <ul class="service-card__price-list list-reset">
-                    <li>1 мастер — 50 000 руб.</li>
-                    <li>1 администратор — 90 000 руб.</li>
-                    <li>От двух сотрудников — скидка 15%.</li>
-                  </ul>
-                </div>
-              </div>
-              <h4 class="service-card__subtitle">
-                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M19.1441 6.37387C16.3986 6.37387 13.8964 3.87387 13.8964 1.12613V0H11.6441V1.12613C11.6441 3.12387 12.5203 4.99775 13.8953 6.37387H0V8.62613H13.8953C12.5203 10.0023 11.6441 11.8761 11.6441 13.8739V15H13.8964V13.8739C13.8964 11.1273 16.3986 8.62613 19.1441 8.62613H20.2703V6.37387H19.1441Z"
-                    fill="#F5F5F5" />
-                </svg>
-
-                <span>Что входит в услугу?</span>
-              </h4>
-              <div class="service-card__wrapper">
-                <ul class="service-card__details-list list-reset">
-                  <li><b>Полный цикл подбора специалистов:</b><br>
-                    от поиска кандидатов до их выходана работу.</li>
-                  <li><b>Полное сопровождение на всех этапах найма и адаптации сотрудников.</b></li>
-                  <li><b>Бесплатная замена сотрудника в течение 1 месяца при увольнении (включает до 5 мастеров и до 2
-                      администраторов).</b></li>
-                </ul>
-
-                <a class="button click" href="#"><span>Выбрать тариф</span></a>
-                <div class="service-card__wrapper">
-
-            </article>
-
-            <article class="service-card service-card--mod">
-              <div class="service-card__header">
-                <div class="service-card__wrapper">
-                  <div class="service-card__container">
-                    <h3 class="service-card__title">Формирование<br>
-                      штата сотрудников</h3>
-                    <p class="service-card__text">Полное решение «под ключ» для одного салона: <a href="#">стоимость
-                        индивидуальная</a>
-                    </p>
+              <article class="service-card">
+                <div class="service-card__header">
+                  <div class="service-card__wrapper">
+                    <h3 class="service-card__title">Стандартный<br>
+                      найм</h3>
+                    <ul class="service-card__price-list list-reset">
+                      <li>1 мастер — 50 000 руб.</li>
+                      <li>1 администратор — 90 000 руб.</li>
+                      <li>От двух сотрудников — скидка 15%.</li>
+                    </ul>
                   </div>
                 </div>
-              </div>
+                <h4 class="service-card__subtitle">
+                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.1441 6.37387C16.3986 6.37387 13.8964 3.87387 13.8964 1.12613V0H11.6441V1.12613C11.6441 3.12387 12.5203 4.99775 13.8953 6.37387H0V8.62613H13.8953C12.5203 10.0023 11.6441 11.8761 11.6441 13.8739V15H13.8964V13.8739C13.8964 11.1273 16.3986 8.62613 19.1441 8.62613H20.2703V6.37387H19.1441Z"
+                      fill="#F5F5F5" />
+                  </svg>
 
-              <h4 class="service-card__subtitle">
-                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M19.1441 6.37387C16.3986 6.37387 13.8964 3.87387 13.8964 1.12613V0H11.6441V1.12613C11.6441 3.12387 12.5203 4.99775 13.8953 6.37387H0V8.62613H13.8953C12.5203 10.0023 11.6441 11.8761 11.6441 13.8739V15H13.8964V13.8739C13.8964 11.1273 16.3986 8.62613 19.1441 8.62613H20.2703V6.37387H19.1441Z"
-                    fill="#F5F5F5" />
-                </svg>
-                <span>Что входит в услугу?</span>
-              </h4>
-
-              <div class="service-card__wrapper">
-                <div class="service-card__container">
+                  <span>Что входит в услугу?</span>
+                </h4>
+                <div class="service-card__wrapper">
                   <ul class="service-card__details-list list-reset">
-                    <li><b>Комплексный найм всех необходимых специалистов для вашего салона.</b></li>
-                    <li><b>Полный контроль на всех этапах:</b> от поиска кандидатов до их трудоустройства.</li>
-                    <li><b>Сопровождение на этапе адаптации новых сотрудников для быстрой интеграции в коллектив.</b>
-                    </li>
-                    <li><b>Бесплатная замена в случае увольнения
-                        в течение первого месяца</b> (до 5 мастеров и до 2 администраторов).</li>
+                    <li><b>Полный цикл подбора специалистов:</b><br>
+                      от поиска кандидатов до их выхода на работу.</li>
+                    <li><b>Полное сопровождение на всех этапах найма и адаптации сотрудников.</b></li>
+                    <li><b>Бесплатная замена сотрудника в течение 1 месяца при увольнении</b> (включает до 5 мастеров
+                      и до 2 
+                      администраторов).</li>
                   </ul>
+
+                  <a class="button click" href="#"><span>Выбрать тариф</span></a>
+                  <div class="service-card__wrapper">
+
+              </article>
+
+              <article class="service-card service-card--mod">
+                <div class="service-card__header">
+                  <div class="service-card__wrapper">
+                    <div class="service-card__container">
+                      <h3 class="service-card__title">Формирование<br>
+                        штата сотрудников</h3>
+                      <p class="service-card__text">Полное решение «под ключ» для одного салона: <a href="#">стоимость
+                          индивидуальная</a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <a class="button click" href="#"><span>Выбрать тариф</span></a>
-              </div>
+
+                <h4 class="service-card__subtitle">
+                  <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.1441 6.37387C16.3986 6.37387 13.8964 3.87387 13.8964 1.12613V0H11.6441V1.12613C11.6441 3.12387 12.5203 4.99775 13.8953 6.37387H0V8.62613H13.8953C12.5203 10.0023 11.6441 11.8761 11.6441 13.8739V15H13.8964V13.8739C13.8964 11.1273 16.3986 8.62613 19.1441 8.62613H20.2703V6.37387H19.1441Z"
+                      fill="#F5F5F5" />
+                  </svg>
+                  <span>Что входит в услугу?</span>
+                </h4>
+
+                <div class="service-card__wrapper">
+                  <div class="service-card__container">
+                    <ul class="service-card__details-list list-reset">
+                      <li><b>Комплексный найм всех необходимых специалистов для вашего салона.</b></li>
+                      <li><b>Полный контроль на всех этапах:</b> от поиска кандидатов до их трудоустройства.</li>
+                      <li><b>Сопровождение на этапе адаптации новых сотрудников для быстрой интеграции в коллектив.</b>
+                      </li>
+                      <li>
+                        <b>Бесплатная замена в случае увольнения
+                          в течение первого месяца</b> (до 5 мастеров и до 2 администраторов).
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="button click" href="#"><span>Выбрать тариф</span></a>
+                </div>
 
 
 
-            </article>
+              </article>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
     <!-- Готовы найти мастеров  -->
     <section class="call-to-action section" id="call-to-action-section">
       <div class="wrapper">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__header-col">
+              <span class="section-label">05 / заявка</span>
+              <h2 class="title">Готовы<br>
+                найти мастеров?</h2>
+              <p class="section__subtitle mobile-hide">Заполните форму, и мы свяжемся с вами для уточнения всех деталей
+                в
+                ближайшее
+                время</p>
+              <p class="section__subtitle desktop-hide tablet-hide mobile-show">
+                Заполните форму, и мы свяжемся<br>
+                с вами для уточнения всех деталей<br>
+                в ближайшее время</p>
+              <div class="call-to-action__form">
+                <div class="form">
+                  <form action="#">
+                    <div class="form__grid">
+                      <div class="form__item">
+                        <input type="text" name="user-name" id="" placeholder="Введите свое имя">
+                      </div>
+                      <div class="form__item form__item--phone">
+                        <input type="tel" name="user-phone" id="" placeholder="+7 (987) 654-32-10">
+                      </div>
+                      <div class="form__item form__item--email form__item--mod">
+                        <input type="email" name="user-email" id="" placeholder="Введите свой E-Mail">
+                      </div>
+                    </div>
+                    <button class="form__button-submit button button--red click" type="button">Оставить заявку</button>
 
-        <div class="section__header">
-          <div class="section__header-col">
-            <span class="section-label">02 / процесс найма</span>
-            <h2 class="title">Готовы<br>
-              найти мастеров?</h2>
-            <p class="section__subtitle">Заполните форму, и мы свяжемся с вами для уточнения всех деталей в ближайшее
-              время</p>
-            <div class="call-to-action__form">
-              <div class="form">
-                <form action="#">
-                  <div class="form__grid">
-                    <div class="form__item">
-                      <input type="text" name="user-name" id="" placeholder="Введите свое имя">
-                    </div>
-                    <div class="form__item form__item--phone">
-                      <input type="tel" name="user-phone" id="" placeholder="+7 (987) 654-32-10">
-                    </div>
-                    <div class="form__item form__item--email form__item--mod">
-                      <input type="email" name="user-email" id="" placeholder="Введите свой E-Mail">
-                    </div>
-                  </div>
-                  <button class="form__button-submit button button--red click" type="button">Оставить заявку</button>
-
-                  <p class="form__info">Нажимая на кнопку, вы соглашаетесь с условиями <a href="#"
-                      target="_blank">Политики
-                      конфиденциальности</a> и <a href="#" target="_blank">Обработки персональных данных</a></p>
-                </form>
+                    <p class="form__info">Нажимая на кнопку, вы соглашаетесь с условиями <a href="#"
+                        target="_blank">Политики
+                        конфиденциальности</a> и <a href="#" target="_blank">Обработки персональных данных</a></p>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -593,38 +666,43 @@
   <!-- подвал  -->
   <footer class="footer section" id="footer-section">
     <div class="wrapper">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__header-col">
+            <span class="section-label">06 / контакты</span>
 
-      <div class="section__header">
-        <div class="section__header-col">
-          <span class="section-label">06 / контакты</span>
-          <h2 class="title">Мы всегда на связи<br>
-            и готовы помочь вам</h2>
+            <h2 class="title mobile-hide">Мы всегда на связи<br>
+              и готовы<i class="heart heart--mod"></i>помочь вам</h2>
+            <h2 class="title desktop-hide tablet-hide mobile-show">
+              Мы всегда<br>
+              на связи и готовы<br>
+              помочь вам<i class="heart heart--mod"></i></h2>
+          </div>
         </div>
-      </div>
 
-      <div class="section__body">
-        <div class="footer__contacts">
-          <span class="footer__contacts-label">Номер телефона:</span>
-          <a class="footer__contacts-link" href="#">+7 958 111 09 64</a>
+        <div class="section__body">
+          <div class="footer__contacts">
+            <span class="footer__contacts-label">Номер телефона:</span>
+            <a class="footer__contacts-link" href="#">+7 958 111 09 64</a>
+          </div>
+          <div class="footer__contacts">
+            <span class="footer__contacts-label">Почта:</span>
+            <a class="footer__contacts-link" href="#">admin@1relax.net</a>
+          </div>
         </div>
-        <div class="footer__contacts">
-          <span class="footer__contacts-label">Почта:</span>
-          <a class="footer__contacts-link" href="#">admin@1relax.net</a>
+
+        <div class="section__footer">
+          <p class="footer__copy">© 2012-2024, 1relax.net</p>
+          <a href="#">Политика конфиденциальности</a>
+          <ul class="social-list list-reset">
+            <li class="social-list__item">
+              <a href="#" class="social-list__link"><span>Telegram-канал</span></a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" class="social-list__link"><span>WhatsApp</span></a>
+            </li>
+          </ul>
         </div>
-      </div>
-
-      <div class="section__footer">
-        <p class="footer__copy">© 2012-2024, 1relax.net</p>
-        <a href="#">Политика конфиденциальности</a>
-        <ul class="social-list list-reset">
-          <li class="social-list__item">
-            <a href="#" class="social-list__link"><span>Telegram-канал</span></a>
-          </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link"><span>WhatsApp</span></a>
-          </li>
-        </ul>
-
       </div>
     </div>
   </footer>
@@ -657,7 +735,7 @@
               <button class="form__button-submit button button--red click" type="button">Оставить заявку</button>
 
               <p class="form__info">Нажимая на кнопку, вы соглашаетесь с условиями <a href="#" target="_blank">Политики
-                  конфиденциальности</a> и <a href="#" target="_blank">Обработки персональных данных</a></p>
+                  конфиденциальности</a> и&#160;<a href="#" target="_blank">Обработки персональных данных</a></p>
             </form>
           </div>
 
@@ -665,10 +743,22 @@
 
         <!-- Кнопка закрытия окна  -->
         <button class="modal__close js-close-modal" type="button" title="Закрыть окно">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L19 19" stroke="#7E5AF0" stroke-width="2" />
-            <path d="M19 1L1 19" stroke="#7E5AF0" stroke-width="2" />
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_91_4981)">
+              <path
+                d="M0.737296 7.95134C0.546615 7.96243 0.35908 7.89904 0.214235 7.77453C-0.0714115 7.48719 -0.0714115 7.0231 0.214235 6.73576L6.46895 0.481023C6.76604 0.203019 7.23224 0.218473 7.51024 0.515571C7.76163 0.784234 7.77629 1.19718 7.54455 1.48297L1.25298 7.77453C1.11002 7.89724 0.925477 7.96052 0.737296 7.95134Z"
+                fill="#FFF2F4" />
+              <path
+                d="M6.98666 7.95117C6.79339 7.95035 6.60818 7.87363 6.47095 7.73753L0.21621 1.48277C-0.0484267 1.17374 -0.012448 0.708658 0.296585 0.443998C0.572406 0.207795 0.979186 0.207795 1.25498 0.443998L7.54655 6.69873C7.84357 6.97681 7.85893 7.44303 7.58085 7.74005C7.56979 7.75187 7.55836 7.7633 7.54655 7.77436C7.47033 7.84064 7.38129 7.89053 7.28498 7.92095C7.18866 7.95137 7.08712 7.96165 6.98666 7.95117Z"
+                fill="#FFF2F4" />
+            </g>
+            <defs>
+              <clipPath id="clip0_91_4981">
+                <rect width="7.77778" height="7.77778" fill="white" transform="translate(0 0.222168)" />
+              </clipPath>
+            </defs>
           </svg>
+
         </button>
 
       </div>

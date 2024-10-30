@@ -29,6 +29,7 @@
     background-size: cover;
     overflow: hidden;
   }
+
   &__title {
     margin: 0;
     font-family: var(--second-family);
@@ -45,17 +46,23 @@
     position: absolute;
     top: 22px;
     right: 22px;
-    display: block;
-    width: max-content;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     color: var(--modal-icon);
     border: none;
     transition: color 0.3s;
     cursor: pointer;
     background-color: transparent;
+    border: 1px solid var(--white-01);
+    border-radius: 8px;
+    width: 35px;
+    height: 35px;
 
     svg {
       display: block;
+      flex-shrink: 0;
 
       path {
         stroke: currentColor;
@@ -79,6 +86,7 @@
 
 
   }
+
   .form__info a {
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -94,9 +102,11 @@
   .form__grid {
     display: block;
   }
+
   .form__item {
     margin-bottom: 10px;
   }
+
   .form input {
     backdrop-filter: blur(55px);
     background: rgba(0, 0, 0, 0.25);
@@ -116,20 +126,23 @@
     &__body {
       padding: 40px 20px;
     }
+
     &__title {
       font-size: 22px !important;
       line-height: 125%;
+
       &::before {
         width: 270px;
       }
     }
-    &__close {
-      top: 6px;
-      right: 6px;
 
-      svg {
-        scale: 0.8;
-      }
+    &__close {
+      // top: 6px;
+      // right: 6px;
+
+      // svg {
+      //   scale: 0.8;
+      // }
     }
   }
 }

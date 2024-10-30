@@ -93,7 +93,7 @@ textarea {
 }
 
 /* Скрывает элементы на экранах с минимальной шириной 1380px */
-@media (min-width: 1380px) {
+@media (min-width: 1024px) {
   .desktop-hide {
     display: none !important;
   }

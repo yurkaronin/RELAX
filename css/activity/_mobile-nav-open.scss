@@ -11,8 +11,17 @@
     background-color: var(--balck);
   }
 
-  .menu-button span {
-    background-color: transparent;
+  // .menu-button span {
+  //   background-color: transparent;
+  // }
+  .menu-button {
+    .icon-on {
+      display: flex;
+    }
+
+    .icon-off {
+      display: none;
+    }
   }
 
   .menu-button span:after {

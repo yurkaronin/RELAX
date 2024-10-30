@@ -55,10 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
         delay: 4000,
         disableOnInteraction: false,
       },
-      navigation: {
-        nextEl: ".js-reviews-slider-big .swiper-button-next",
-        prevEl: ".js-reviews-slider-big .swiper-button-prev",
-      },
+      // navigation: {
+      //   nextEl: ".js-reviews-slider-big .swiper-button-next",
+      //   prevEl: ".js-reviews-slider-big .swiper-button-prev",
+      // },
       thumbs: {
         swiper: swiper,
       },
