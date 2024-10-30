@@ -630,18 +630,28 @@ textarea {
   box-shadow: 0 6px 12px 0 rgba(27, 8, 8, 0.54), 0 22px 22px 0 rgba(27, 8, 8, 0.47), 0 50px 30px 0 rgba(27, 8, 8, 0.28), 0 89px 36px 0 rgba(27, 8, 8, 0.08), 0 140px 39px 0 rgba(27, 8, 8, 0.01), 0 3px 0 0 #90774e;
   background: linear-gradient(90deg, #ebb877 0%, #fee5bc 50%, #facd96 100%);
 }
-.button:hover, .button:active, .button:focus {
-  background: linear-gradient(90deg, #b71b25 0%, #c24a52 50%, #b71b25 100%);
-  color: #fff;
-  box-shadow: none;
+.button:hover {
+  box-shadow: 0 6px 12px 0 rgba(27, 8, 8, 0.54), 0 22px 22px 0 rgba(27, 8, 8, 0.47), 0 50px 30px 0 rgba(27, 8, 8, 0.28), 0 89px 36px 0 rgba(27, 8, 8, 0.08), 0 140px 39px 0 rgba(27, 8, 8, 0.01), 0 3px 0 0 #90774e, inset 0 0 10px 0 #fff;
+  background: linear-gradient(90deg, #ebb877 0%, #fee5bc 50%, #facd96 100%);
+}
+.button:active {
+  box-shadow: 0 6px 12px 0 rgba(27, 8, 8, 0.54), 0 22px 22px 0 rgba(27, 8, 8, 0.47), 0 50px 30px 0 rgba(27, 8, 8, 0.28), 0 89px 36px 0 rgba(27, 8, 8, 0.08), 0 140px 39px 0 rgba(27, 8, 8, 0.01), 0 3px 0 0 #90774e, inset 0 4px 15px 0 #80541d;
+  background: linear-gradient(90deg, #ebb877 0%, #fee5bc 50%, #facd96 100%);
 }
 .button--red {
   box-shadow: 0 3px 0 0 #8c2229;
   background: linear-gradient(90deg, #b71b25 0%, #c24a52 50%, #b71b25 100%);
   color: #fff;
 }
-.button--red:hover, .button--red:active, .button--red:focus {
-  background: linear-gradient(90deg, #310d10 0%, #552528 52.5%, #530208 100%);
+.button--red:hover {
+  color: #80541d;
+  box-shadow: 0 6px 12px 0 rgba(27, 8, 8, 0.54), 0 22px 22px 0 rgba(27, 8, 8, 0.47), 0 50px 30px 0 rgba(27, 8, 8, 0.28), 0 89px 36px 0 rgba(27, 8, 8, 0.08), 0 140px 39px 0 rgba(27, 8, 8, 0.01), 0 3px 0 0 #90774e, inset 0 0 10px 0 #fff;
+  background: linear-gradient(90deg, #ebb877 0%, #fee5bc 50%, #facd96 100%);
+}
+.button--red:active {
+  color: #80541d;
+  box-shadow: 0 6px 12px 0 rgba(27, 8, 8, 0.54), 0 22px 22px 0 rgba(27, 8, 8, 0.47), 0 50px 30px 0 rgba(27, 8, 8, 0.28), 0 89px 36px 0 rgba(27, 8, 8, 0.08), 0 140px 39px 0 rgba(27, 8, 8, 0.01), 0 3px 0 0 #90774e, inset 0 4px 15px 0 #80541d;
+  background: linear-gradient(90deg, #ebb877 0%, #fee5bc 50%, #facd96 100%);
 }
 .button--mod {
   border: 1px solid var(--white-005);
@@ -654,9 +664,11 @@ textarea {
   color: rgba(255, 255, 255, 0.85);
   box-shadow: none;
 }
-.button--mod:hover, .button--mod:active, .button--mod:focus {
-  background: linear-gradient(90deg, #b71b25 0%, #c24a52 50%, #b71b25 100%);
-  color: #fff;
+.button--mod:hover {
+  -webkit-backdrop-filter: blur(45px);
+          backdrop-filter: blur(45px);
+  background: rgba(0, 0, 0, 0.05);
+  background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 .button.isActive {
   color: var(--white);
@@ -2268,9 +2280,6 @@ textarea {
 }
 .modal__close svg path {
   stroke: currentColor;
-}
-.modal__close:hover, .modal__close:active, .modal__close:focus {
-  color: var(--modal-accent);
 }
 .modal .form__info {
   font-family: var(--font-family);
